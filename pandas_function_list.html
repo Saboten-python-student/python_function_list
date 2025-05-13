@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>pandas 関数・メソッド一覧</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 40px; }
+        th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+        th { background-color: #f0f0f0; }
+        h2 { border-left: 4px solid #007acc; padding-left: 8px; }
+    </style>
+</head>
+<body>
+<h1>pandas 関数・メソッド一覧</h1>
+<h2>データ構造</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>Series</code></td><td>一次元のラベル付き配列</td></tr>
+<tr><td><code>DataFrame</code></td><td>二次元のラベル付き表形式データ</td></tr>
+</tbody>
+</table>
+<h2>データ読み書き</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>read_csv() / to_csv()</code></td><td>CSVファイルの読み書き</td></tr>
+<tr><td><code>read_excel() / to_excel()</code></td><td>Excelファイルの読み書き</td></tr>
+<tr><td><code>read_json() / to_json()</code></td><td>JSON形式の読み書き</td></tr>
+<tr><td><code>read_sql() / to_sql()</code></td><td>SQLデータベースとのやりとり</td></tr>
+</tbody>
+</table>
+<h2>データ確認・基本操作</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>head(), tail()</code></td><td>データの先頭・末尾を表示</td></tr>
+<tr><td><code>info(), describe()</code></td><td>概要・統計要約を表示</td></tr>
+<tr><td><code>shape, columns, index</code></td><td>データの構造情報取得</td></tr>
+<tr><td><code>dtypes, isnull(), notnull()</code></td><td>データ型・欠損値確認</td></tr>
+</tbody>
+</table>
+<h2>データ抽出・加工</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>loc[], iloc[]</code></td><td>ラベル・インデックスで抽出</td></tr>
+<tr><td><code>query()</code></td><td>条件による抽出</td></tr>
+<tr><td><code>drop(), rename()</code></td><td>行列の削除・名前変更</td></tr>
+<tr><td><code>sort_values()</code></td><td>値でソート</td></tr>
+<tr><td><code>apply(), map(), replace()</code></td><td>関数適用・置換処理</td></tr>
+</tbody>
+</table>
+<h2>集計・統計処理</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>groupby()</code></td><td>グループ化集計</td></tr>
+<tr><td><code>mean(), sum(), count()</code></td><td>基本統計</td></tr>
+<tr><td><code>agg(), transform()</code></td><td>複合統計処理</td></tr>
+<tr><td><code>pivot_table()</code></td><td>ピボットテーブル</td></tr>
+</tbody>
+</table>
+<h2>欠損値・重複処理</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>isna(), fillna()</code></td><td>欠損の確認・補完</td></tr>
+<tr><td><code>dropna()</code></td><td>欠損値の削除</td></tr>
+<tr><td><code>duplicated(), drop_duplicates()</code></td><td>重複行の検出・削除</td></tr>
+</tbody>
+</table>
+<h2>時系列処理</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>to_datetime()</code></td><td>日時型に変換</td></tr>
+<tr><td><code>resample()</code></td><td>時系列の再サンプリング</td></tr>
+<tr><td><code>rolling()</code></td><td>移動平均などのロール演算</td></tr>
+<tr><td><code>shift(), diff()</code></td><td>シフト・差分計算</td></tr>
+</tbody>
+</table>
+
+</body>
+</html>

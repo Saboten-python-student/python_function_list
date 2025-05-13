@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>PyVista 関数・メソッド一覧</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 40px; }
+        th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+        th { background-color: #f0f0f0; }
+        h2 { border-left: 4px solid #007acc; padding-left: 8px; }
+    </style>
+</head>
+<body>
+<h1>PyVista 関数・メソッド一覧</h1>
+<h2>基本構成</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>pv.Plotter()</code></td><td>3D描画用のプロッタ作成</td></tr>
+<tr><td><code>pv.read()</code></td><td>VTKファイルなどの読み込み</td></tr>
+<tr><td><code>pv.wrap()</code></td><td>NumPy配列などをPyVistaオブジェクトに変換</td></tr>
+<tr><td><code>pv.UniformGrid()</code></td><td>等間隔の格子データ作成</td></tr>
+</tbody>
+</table>
+<h2>メッシュ作成・操作</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>add_mesh()</code></td><td>表示対象のメッシュ・ボリュームを追加</td></tr>
+<tr><td><code>threshold()</code></td><td>指定範囲での抽出（等値面マスク）</td></tr>
+<tr><td><code>slice(), slice_orthogonal()</code></td><td>スライス（断面）表示</td></tr>
+<tr><td><code>contour()</code></td><td>等値面の抽出</td></tr>
+<tr><td><code>clip()</code></td><td>指定平面での切断表示</td></tr>
+<tr><td><code>decimate()</code></td><td>ポリゴン数を減らす簡略化処理</td></tr>
+</tbody>
+</table>
+<h2>描画設定</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>show()</code></td><td>描画ウィンドウの表示</td></tr>
+<tr><td><code>add_scalar_bar()</code></td><td>カラーバーの追加</td></tr>
+<tr><td><code>add_axes()</code></td><td>座標軸の追加</td></tr>
+<tr><td><code>camera_position</code></td><td>視点位置の設定</td></tr>
+<tr><td><code>update()</code></td><td>描画更新（アニメーションなどで使用）</td></tr>
+</tbody>
+</table>
+<h2>配色・スタイル</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>cmap=</code></td><td>カラーマップ（例：cmap="coolwarm")</td></tr>
+<tr><td><code>opacity=</code></td><td>不透明度の指定（0〜1またはリスト）</td></tr>
+<tr><td><code>show_edges=True</code></td><td>メッシュのエッジを表示</td></tr>
+<tr><td><code>smooth_shading=True</code></td><td>表面を滑らかに表示</td></tr>
+</tbody>
+</table>
+<h2>補助機能・出力</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>export_html()</code></td><td>Web表示用に出力</td></tr>
+<tr><td><code>screenshot()</code></td><td>画像として保存</td></tr>
+<tr><td><code>plot_off_screen=True</code></td><td>GUIを使わず描画（サーバー用など）</td></tr>
+</tbody>
+</table>
+
+</body>
+</html>

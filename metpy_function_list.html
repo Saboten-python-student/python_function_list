@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>MetPy 関数・モジュール一覧</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 40px; }
+        th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+        th { background-color: #f0f0f0; }
+        h2 { border-left: 4px solid #007acc; padding-left: 8px; }
+    </style>
+</head>
+<body>
+<h1>MetPy 関数・モジュール一覧</h1>
+<h2>基本情報</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>units</code></td><td>単位の扱い（Pintベース）</td></tr>
+<tr><td><code>units.Quantity</code></td><td>単位付きのデータオブジェクト</td></tr>
+<tr><td><code>units.units()</code></td><td>単位の指定（例：units('degC')）</td></tr>
+</tbody>
+</table>
+<h2>熱力学・大気安定性</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>dewpoint_from_relative_humidity()</code></td><td>相対湿度から露点を計算</td></tr>
+<tr><td><code>saturation_vapor_pressure()</code></td><td>飽和水蒸気圧</td></tr>
+<tr><td><code>relative_humidity_from_dewpoint()</code></td><td>露点から相対湿度を計算</td></tr>
+<tr><td><code>potential_temperature()</code></td><td>ポテンシャル温位</td></tr>
+<tr><td><code>equivalent_potential_temperature()</code></td><td>相当温位</td></tr>
+<tr><td><code>virtual_temperature()</code></td><td>仮温度</td></tr>
+</tbody>
+</table>
+<h2>降水・凝結関連</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>lifted_index()</code></td><td>LI（持ち上げ指数）の計算</td></tr>
+<tr><td><code>parcel_profile()</code></td><td>気塊上昇時の温度プロファイル</td></tr>
+<tr><td><code>lcl_pressure(), lcl_temperature()</code></td><td>LCL（凝結高度）の気圧・気温</td></tr>
+<tr><td><code>lcl()</code></td><td>LCL気圧と気温を同時に計算</td></tr>
+</tbody>
+</table>
+<h2>風・運動量関連</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>wind_components()</code></td><td>風速と風向からu,v成分を計算</td></tr>
+<tr><td><code>wind_speed()</code></td><td>u,v成分から風速を計算</td></tr>
+<tr><td><code>wind_direction()</code></td><td>u,v成分から風向を計算</td></tr>
+<tr><td><code>shear()</code></td><td>風の鉛直シア計算</td></tr>
+<tr><td><code>bulk_richardson_number()</code></td><td>バルクリチャードソン数（対流判定）</td></tr>
+</tbody>
+</table>
+<h2>成層・安定度解析</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>brunt_vaisala_frequency()</code></td><td>ブリュン・ヴァイサラ周波数</td></tr>
+<tr><td><code>static_stability()</code></td><td>静的安定度の計算</td></tr>
+<tr><td><code>moist_static_energy()</code></td><td>湿静的エネルギー</td></tr>
+<tr><td><code>cape_cin()</code></td><td>CAPE・CINの同時計算</td></tr>
+</tbody>
+</table>
+<h2>その他</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>interpolate_1d()</code></td><td>高度や気圧に沿った補間</td></tr>
+<tr><td><code>smooth_n_point(), smooth_window()</code></td><td>データの平滑化</td></tr>
+<tr><td><code>geostrophic_wind()</code></td><td>地衡風の計算</td></tr>
+<tr><td><code>absolute_vorticity()</code></td><td>絶対渦度</td></tr>
+</tbody>
+</table>
+
+</body>
+</html>

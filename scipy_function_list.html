@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>SciPy 関数・モジュール一覧</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 40px; }
+        th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+        th { background-color: #f0f0f0; }
+        h2 { border-left: 4px solid #007acc; padding-left: 8px; }
+    </style>
+</head>
+<body>
+<h1>SciPy 関数・モジュール一覧</h1>
+<h2>基本構成（主要モジュール）</h2>
+<table>
+<thead><tr><th>名前 / モジュール</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>scipy.integrate</code></td><td>数値積分（常微分方程式の解法など）</td></tr>
+<tr><td><code>scipy.optimize</code></td><td>最適化・方程式の数値解法</td></tr>
+<tr><td><code>scipy.interpolate</code></td><td>補間（線形・スプラインなど）</td></tr>
+<tr><td><code>scipy.fft</code></td><td>高速フーリエ変換（FFT）</td></tr>
+<tr><td><code>scipy.linalg</code></td><td>線形代数（NumPyの上位互換）</td></tr>
+<tr><td><code>scipy.signal</code></td><td>信号処理（フィルタ、畳み込みなど）</td></tr>
+<tr><td><code>scipy.stats</code></td><td>統計処理・確率分布</td></tr>
+<tr><td><code>scipy.spatial</code></td><td>空間解析（距離、KD-tree）</td></tr>
+</tbody>
+</table>
+<h2>integrate（積分・微分方程式）</h2>
+<table>
+<thead><tr><th>名前 / モジュール</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>quad()</code></td><td>一変数の数値積分</td></tr>
+<tr><td><code>dblquad()</code></td><td>二重積分</td></tr>
+<tr><td><code>solve_ivp()</code></td><td>常微分方程式（IVP）の数値解</td></tr>
+<tr><td><code>odeint()</code></td><td>ODEの数値積分（古典的）</td></tr>
+</tbody>
+</table>
+<h2>optimize（最適化）</h2>
+<table>
+<thead><tr><th>名前 / モジュール</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>minimize()</code></td><td>最小化（多目的関数）</td></tr>
+<tr><td><code>root()</code></td><td>方程式の数値解法</td></tr>
+<tr><td><code>curve_fit()</code></td><td>曲線フィッティング（回帰）</td></tr>
+<tr><td><code>least_squares()</code></td><td>最小二乗法</td></tr>
+</tbody>
+</table>
+<h2>interpolate（補間）</h2>
+<table>
+<thead><tr><th>名前 / モジュール</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>interp1d()</code></td><td>1次元補間（線形・スプライン）</td></tr>
+<tr><td><code>interp2d()</code></td><td>2次元補間（旧式・非推奨）</td></tr>
+<tr><td><code>griddata()</code></td><td>任意点の格子補間</td></tr>
+<tr><td><code>UnivariateSpline</code></td><td>スプライン補間クラス</td></tr>
+</tbody>
+</table>
+<h2>fft（高速フーリエ変換）</h2>
+<table>
+<thead><tr><th>名前 / モジュール</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>fft(), ifft()</code></td><td>フーリエ変換／逆変換</td></tr>
+<tr><td><code>rfft(), irfft()</code></td><td>実数高速変換</td></tr>
+<tr><td><code>fftfreq()</code></td><td>周波数の計算</td></tr>
+</tbody>
+</table>
+<h2>linalg（線形代数）</h2>
+<table>
+<thead><tr><th>名前 / モジュール</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>inv(), det()</code></td><td>逆行列、行列式</td></tr>
+<tr><td><code>solve(), eig()</code></td><td>連立方程式、固有値問題</td></tr>
+<tr><td><code>svd()</code></td><td>特異値分解</td></tr>
+</tbody>
+</table>
+<h2>stats（統計・確率分布）</h2>
+<table>
+<thead><tr><th>名前 / モジュール</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>norm, binom, poisson</code></td><td>各種確率分布オブジェクト</td></tr>
+<tr><td><code>pdf(), cdf(), ppf()</code></td><td>確率密度・累積分布・分位点</td></tr>
+<tr><td><code>mean(), std(), var()</code></td><td>各種統計量</td></tr>
+<tr><td><code>ttest_ind(), pearsonr()</code></td><td>t検定、相関係数</td></tr>
+</tbody>
+</table>
+
+</body>
+</html>

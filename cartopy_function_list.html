@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Cartopy 関数・メソッド一覧</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 40px; }
+        th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+        th { background-color: #f0f0f0; }
+        h2 { border-left: 4px solid #007acc; padding-left: 8px; }
+    </style>
+</head>
+<body>
+<h1>Cartopy 関数・メソッド一覧</h1>
+<h2>基本構成</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>cartopy.crs</code></td><td>座標参照系（投影法）の定義モジュール</td></tr>
+<tr><td><code>cartopy.feature</code></td><td>地図上の自然・行政情報の提供モジュール</td></tr>
+<tr><td><code>ccrs</code></td><td>よく使うCRS（import cartopy.crs as ccrs）</td></tr>
+<tr><td><code>cfeature</code></td><td>よく使うFeature（import cartopy.feature as cfeature）</td></tr>
+</tbody>
+</table>
+<h2>代表的な座標参照系（CRS）</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>ccrs.PlateCarree()</code></td><td>緯度経度そのまま（等間隔）</td></tr>
+<tr><td><code>ccrs.Mercator()</code></td><td>メルカトル投影</td></tr>
+<tr><td><code>ccrs.LambertConformal()</code></td><td>ランベルト正角円錐図法</td></tr>
+<tr><td><code>ccrs.Orthographic()</code></td><td>正射投影（地球を丸く）</td></tr>
+</tbody>
+</table>
+<h2>地図要素の追加（Feature）</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>cfeature.COASTLINE</code></td><td>海岸線</td></tr>
+<tr><td><code>cfeature.BORDERS</code></td><td>国境線</td></tr>
+<tr><td><code>cfeature.LAKES</code></td><td>湖</td></tr>
+<tr><td><code>cfeature.RIVERS</code></td><td>川</td></tr>
+<tr><td><code>cfeature.STATES</code></td><td>アメリカ州境界（国内線）</td></tr>
+<tr><td><code>cfeature.LAND, cfeature.OCEAN</code></td><td>陸地・海洋</td></tr>
+</tbody>
+</table>
+<h2>Axes（地図）の作成と操作</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>plt.axes(projection=ccrs.X)</code></td><td>地図軸の作成</td></tr>
+<tr><td><code>ax.set_extent([lon_min, lon_max, lat_min, lat_max])</code></td><td>表示範囲の設定</td></tr>
+<tr><td><code>ax.coastlines()</code></td><td>海岸線の描画（簡易）</td></tr>
+<tr><td><code>ax.gridlines()</code></td><td>緯度経度線の描画</td></tr>
+<tr><td><code>ax.add_feature()</code></td><td>任意の地理要素を追加</td></tr>
+<tr><td><code>ax.text(), ax.plot()</code></td><td>テキストや点・線の描画（地図上）</td></tr>
+</tbody>
+</table>
+<h2>高度な地図表示</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>transform=ccrs.PlateCarree()</code></td><td>データ座標系の指定（描画時）</td></tr>
+<tr><td><code>ax.contourf(..., transform=ccrs.X)</code></td><td>等値図の地図上描画</td></tr>
+<tr><td><code>ax.pcolormesh(..., transform=ccrs.X)</code></td><td>カラーマップの描画</td></tr>
+<tr><td><code>ax.scatter(..., transform=ccrs.X)</code></td><td>点群データの表示</td></tr>
+</tbody>
+</table>
+
+</body>
+</html>

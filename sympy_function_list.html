@@ -1,0 +1,855 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>SymPy 関数・クラス一覧</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 40px; }
+        th, td { border: 1px solid #999; padding: 6px; text-align: left; font-size: 0.9rem; }
+        th { background-color: #f0f0f0; }
+        h1 { margin-top: 0; }
+    </style>
+</head>
+<body>
+<h1>SymPy 関数・クラス一覧（主要モジュールからの抜粋）</h1>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>------</code></td><td>------</td></tr>
+<tr><td><code>`Abs`</code></td><td></td></tr>
+<tr><td><code>`AccumBounds`</code></td><td></td></tr>
+<tr><td><code>`Add`</code></td><td></td></tr>
+<tr><td><code>`Adjoint`</code></td><td></td></tr>
+<tr><td><code>`AlgebraicField`</code></td><td>Algebraic number field :ref:`QQ(a)`</td></tr>
+<tr><td><code>`AlgebraicNumber`</code></td><td>Class for representing algebraic numbers in SymPy.</td></tr>
+<tr><td><code>`And`</code></td><td></td></tr>
+<tr><td><code>`AppliedPredicate`</code></td><td></td></tr>
+<tr><td><code>`Array`</code></td><td></td></tr>
+<tr><td><code>`AssumptionsContext`</code></td><td></td></tr>
+<tr><td><code>`Atom`</code></td><td></td></tr>
+<tr><td><code>`AtomicExpr`</code></td><td></td></tr>
+<tr><td><code>`BasePolynomialError`</code></td><td>Base class for polynomial related exceptions.</td></tr>
+<tr><td><code>`Basic`</code></td><td></td></tr>
+<tr><td><code>`BlockDiagMatrix`</code></td><td>A sparse matrix with block matrices along its diagonals</td></tr>
+<tr><td><code>`BlockMatrix`</code></td><td>A BlockMatrix is a Matrix comprised of other matrices.</td></tr>
+<tr><td><code>`CRootOf`</code></td><td>Represents an indexed complex root of a polynomial.</td></tr>
+<tr><td><code>`Chi`</code></td><td></td></tr>
+<tr><td><code>`Ci`</code></td><td></td></tr>
+<tr><td><code>`Circle`</code></td><td>A circle in space.</td></tr>
+<tr><td><code>`CoercionFailed`</code></td><td></td></tr>
+<tr><td><code>`Complement`</code></td><td>Represents the set difference or relative complement of a set with</td></tr>
+<tr><td><code>`ComplexField`</code></td><td>Complex numbers up to the given precision.</td></tr>
+<tr><td><code>`ComplexRegion`</code></td><td></td></tr>
+<tr><td><code>`ComplexRootOf`</code></td><td>Represents an indexed complex root of a polynomial.</td></tr>
+<tr><td><code>`ComputationFailed`</code></td><td></td></tr>
+<tr><td><code>`ConditionSet`</code></td><td></td></tr>
+<tr><td><code>`Contains`</code></td><td></td></tr>
+<tr><td><code>`CosineTransform`</code></td><td></td></tr>
+<tr><td><code>`Curve`</code></td><td>A curve in space.</td></tr>
+<tr><td><code>`DeferredVector`</code></td><td>A vector whose components are deferred (e.g. for use with lambdify)</td></tr>
+<tr><td><code>`DenseNDimArray`</code></td><td></td></tr>
+<tr><td><code>`Derivative`</code></td><td></td></tr>
+<tr><td><code>`Determinant`</code></td><td>Matrix Determinant</td></tr>
+<tr><td><code>`DiagMatrix`</code></td><td></td></tr>
+<tr><td><code>`DiagonalMatrix`</code></td><td>DiagonalMatrix(M) will create a matrix expression that</td></tr>
+<tr><td><code>`DiagonalOf`</code></td><td>DiagonalOf(M) will create a matrix expression that</td></tr>
+<tr><td><code>`Dict`</code></td><td></td></tr>
+<tr><td><code>`DiracDelta`</code></td><td></td></tr>
+<tr><td><code>`DisjointUnion`</code></td><td>Represents the disjoint union (also known as the external disjoint union)</td></tr>
+<tr><td><code>`Domain`</code></td><td>Superclass for all domains in the polys domains system.</td></tr>
+<tr><td><code>`DomainError`</code></td><td></td></tr>
+<tr><td><code>`DotProduct`</code></td><td></td></tr>
+<tr><td><code>`Dummy`</code></td><td>Dummy symbols are each unique, even if they have the same name:</td></tr>
+<tr><td><code>`E1`</code></td><td></td></tr>
+<tr><td><code>`EPath`</code></td><td></td></tr>
+<tr><td><code>`Ei`</code></td><td></td></tr>
+<tr><td><code>`Eijk`</code></td><td></td></tr>
+<tr><td><code>`Ellipse`</code></td><td>An elliptical GeometryEntity.</td></tr>
+<tr><td><code>`Eq`</code></td><td>An equal relation between two objects.</td></tr>
+<tr><td><code>`Equality`</code></td><td>An equal relation between two objects.</td></tr>
+<tr><td><code>`Equivalent`</code></td><td></td></tr>
+<tr><td><code>`EvaluationFailed`</code></td><td></td></tr>
+<tr><td><code>`ExactQuotientFailed`</code></td><td></td></tr>
+<tr><td><code>`Expr`</code></td><td></td></tr>
+<tr><td><code>`ExpressionDomain`</code></td><td>A class for arbitrary expressions.</td></tr>
+<tr><td><code>`ExtraneousFactors`</code></td><td></td></tr>
+<tr><td><code>`FF`</code></td><td>Finite field based on Python's integers.</td></tr>
+<tr><td><code>`FF_gmpy`</code></td><td>Finite field based on GMPY integers.</td></tr>
+<tr><td><code>`FF_python`</code></td><td>Finite field based on Python's integers.</td></tr>
+<tr><td><code>`FallingFactorial`</code></td><td></td></tr>
+<tr><td><code>`FiniteField`</code></td><td>Finite field of prime order :ref:`GF(p)`</td></tr>
+<tr><td><code>`FiniteSet`</code></td><td></td></tr>
+<tr><td><code>`FlagError`</code></td><td></td></tr>
+<tr><td><code>`Float`</code></td><td>Represent a floating-point number of arbitrary precision.</td></tr>
+<tr><td><code>`FourierTransform`</code></td><td></td></tr>
+<tr><td><code>`FractionField`</code></td><td>A class for representing multivariate rational function fields.</td></tr>
+<tr><td><code>`Function`</code></td><td></td></tr>
+<tr><td><code>`FunctionClass`</code></td><td></td></tr>
+<tr><td><code>`FunctionMatrix`</code></td><td>Represents a matrix using a function (``Lambda``) which gives</td></tr>
+<tr><td><code>`GF`</code></td><td>Finite field based on Python's integers.</td></tr>
+<tr><td><code>`GMPYFiniteField`</code></td><td>Finite field based on GMPY integers.</td></tr>
+<tr><td><code>`GMPYIntegerRing`</code></td><td>Integer ring based on GMPY's ``mpz`` type.</td></tr>
+<tr><td><code>`GMPYRationalField`</code></td><td>Rational field based on GMPY's ``mpq`` type.</td></tr>
+<tr><td><code>`Ge`</code></td><td>Class representations of inequalities.</td></tr>
+<tr><td><code>`GeneratorsError`</code></td><td></td></tr>
+<tr><td><code>`GeneratorsNeeded`</code></td><td></td></tr>
+<tr><td><code>`GeometryError`</code></td><td>An exception raised by classes in the geometry module.</td></tr>
+<tr><td><code>`GramSchmidt`</code></td><td>Apply the Gram-Schmidt process to a set of vectors.</td></tr>
+<tr><td><code>`GreaterThan`</code></td><td>Class representations of inequalities.</td></tr>
+<tr><td><code>`GroebnerBasis`</code></td><td>Represents a reduced Groebner basis.</td></tr>
+<tr><td><code>`Gt`</code></td><td>Class representations of inequalities.</td></tr>
+<tr><td><code>`HadamardPower`</code></td><td></td></tr>
+<tr><td><code>`HadamardProduct`</code></td><td></td></tr>
+<tr><td><code>`HankelTransform`</code></td><td></td></tr>
+<tr><td><code>`Heaviside`</code></td><td></td></tr>
+<tr><td><code>`HeuristicGCDFailed`</code></td><td></td></tr>
+<tr><td><code>`HomomorphismFailed`</code></td><td></td></tr>
+<tr><td><code>`ITE`</code></td><td></td></tr>
+<tr><td><code>`Identity`</code></td><td>The Matrix Identity I - multiplicative identity</td></tr>
+<tr><td><code>`Idx`</code></td><td>Represents an integer index as an ``Integer`` or integer expression.</td></tr>
+<tr><td><code>`ImageSet`</code></td><td></td></tr>
+<tr><td><code>`ImmutableDenseMatrix`</code></td><td>Create an immutable version of a matrix.</td></tr>
+<tr><td><code>`ImmutableDenseNDimArray`</code></td><td></td></tr>
+<tr><td><code>`ImmutableMatrix`</code></td><td>Create an immutable version of a matrix.</td></tr>
+<tr><td><code>`ImmutableSparseMatrix`</code></td><td>Create an immutable version of a sparse matrix.</td></tr>
+<tr><td><code>`ImmutableSparseNDimArray`</code></td><td></td></tr>
+<tr><td><code>`Implies`</code></td><td></td></tr>
+<tr><td><code>`Indexed`</code></td><td>Represents a mathematical object with indices.</td></tr>
+<tr><td><code>`IndexedBase`</code></td><td>Represent the base or stem of an indexed object</td></tr>
+<tr><td><code>`Integer`</code></td><td>Represents integer numbers of any size.</td></tr>
+<tr><td><code>`IntegerRing`</code></td><td>The domain ``ZZ`` representing the integers `\mathbb{Z}`.</td></tr>
+<tr><td><code>`Integral`</code></td><td>Represents unevaluated integral.</td></tr>
+<tr><td><code>`Intersection`</code></td><td></td></tr>
+<tr><td><code>`Interval`</code></td><td></td></tr>
+<tr><td><code>`Inverse`</code></td><td></td></tr>
+<tr><td><code>`InverseCosineTransform`</code></td><td></td></tr>
+<tr><td><code>`InverseFourierTransform`</code></td><td></td></tr>
+<tr><td><code>`InverseHankelTransform`</code></td><td></td></tr>
+<tr><td><code>`InverseLaplaceTransform`</code></td><td></td></tr>
+<tr><td><code>`InverseMellinTransform`</code></td><td></td></tr>
+<tr><td><code>`InverseSineTransform`</code></td><td></td></tr>
+<tr><td><code>`IsomorphismFailed`</code></td><td></td></tr>
+<tr><td><code>`KroneckerDelta`</code></td><td></td></tr>
+<tr><td><code>`KroneckerProduct`</code></td><td></td></tr>
+<tr><td><code>`LC`</code></td><td></td></tr>
+<tr><td><code>`LM`</code></td><td></td></tr>
+<tr><td><code>`LT`</code></td><td></td></tr>
+<tr><td><code>`Lambda`</code></td><td></td></tr>
+<tr><td><code>`LambertW`</code></td><td></td></tr>
+<tr><td><code>`LaplaceTransform`</code></td><td></td></tr>
+<tr><td><code>`Le`</code></td><td>Class representations of inequalities.</td></tr>
+<tr><td><code>`LessThan`</code></td><td>Class representations of inequalities.</td></tr>
+<tr><td><code>`LeviCivita`</code></td><td></td></tr>
+<tr><td><code>`Li`</code></td><td></td></tr>
+<tr><td><code>`Limit`</code></td><td>Represents an unevaluated limit.</td></tr>
+<tr><td><code>`Line`</code></td><td>An infinite line in space.</td></tr>
+<tr><td><code>`Line2D`</code></td><td>An infinite line in space 2D.</td></tr>
+<tr><td><code>`Line3D`</code></td><td>An infinite 3D line in space.</td></tr>
+<tr><td><code>`Lt`</code></td><td>Class representations of inequalities.</td></tr>
+<tr><td><code>`MatAdd`</code></td><td>A Sum of Matrix Expressions</td></tr>
+<tr><td><code>`MatMul`</code></td><td></td></tr>
+<tr><td><code>`MatPow`</code></td><td></td></tr>
+<tr><td><code>`Matrix`</code></td><td></td></tr>
+<tr><td><code>`MatrixBase`</code></td><td>Base class for matrix objects.</td></tr>
+<tr><td><code>`MatrixExpr`</code></td><td>Superclass for Matrix Expressions</td></tr>
+<tr><td><code>`MatrixPermute`</code></td><td>Symbolic representation for permuting matrix rows or columns.</td></tr>
+<tr><td><code>`MatrixSlice`</code></td><td>A MatrixSlice of a Matrix Expression</td></tr>
+<tr><td><code>`MatrixSymbol`</code></td><td>Symbolic representation of a Matrix object</td></tr>
+<tr><td><code>`Max`</code></td><td></td></tr>
+<tr><td><code>`MellinTransform`</code></td><td></td></tr>
+<tr><td><code>`Min`</code></td><td></td></tr>
+<tr><td><code>`Mod`</code></td><td>Represents a modulo operation on symbolic expressions.</td></tr>
+<tr><td><code>`Monomial`</code></td><td>Class representing a monomial, i.e. a product of powers.</td></tr>
+<tr><td><code>`Mul`</code></td><td></td></tr>
+<tr><td><code>`MultivariatePolynomialError`</code></td><td></td></tr>
+<tr><td><code>`MutableDenseMatrix`</code></td><td></td></tr>
+<tr><td><code>`MutableDenseNDimArray`</code></td><td></td></tr>
+<tr><td><code>`MutableMatrix`</code></td><td></td></tr>
+<tr><td><code>`MutableSparseMatrix`</code></td><td></td></tr>
+<tr><td><code>`MutableSparseNDimArray`</code></td><td></td></tr>
+<tr><td><code>`N`</code></td><td></td></tr>
+<tr><td><code>`NDimArray`</code></td><td></td></tr>
+<tr><td><code>`Nand`</code></td><td></td></tr>
+<tr><td><code>`Ne`</code></td><td>An unequal relation between two objects.</td></tr>
+<tr><td><code>`NonSquareMatrixError`</code></td><td></td></tr>
+<tr><td><code>`Nor`</code></td><td></td></tr>
+<tr><td><code>`Not`</code></td><td></td></tr>
+<tr><td><code>`NotAlgebraic`</code></td><td></td></tr>
+<tr><td><code>`NotInvertible`</code></td><td></td></tr>
+<tr><td><code>`NotReversible`</code></td><td></td></tr>
+<tr><td><code>`Number`</code></td><td>Represents atomic numbers in SymPy.</td></tr>
+<tr><td><code>`NumberSymbol`</code></td><td></td></tr>
+<tr><td><code>`O`</code></td><td>Represents the limiting behavior of some function.</td></tr>
+<tr><td><code>`OmegaPower`</code></td><td></td></tr>
+<tr><td><code>`OneMatrix`</code></td><td></td></tr>
+<tr><td><code>`OperationNotSupported`</code></td><td></td></tr>
+<tr><td><code>`OptionError`</code></td><td></td></tr>
+<tr><td><code>`Options`</code></td><td></td></tr>
+<tr><td><code>`Or`</code></td><td></td></tr>
+<tr><td><code>`Order`</code></td><td>Represents the limiting behavior of some function.</td></tr>
+<tr><td><code>`Ordinal`</code></td><td></td></tr>
+<tr><td><code>`POSform`</code></td><td></td></tr>
+<tr><td><code>`Parabola`</code></td><td>A parabolic GeometryEntity.</td></tr>
+<tr><td><code>`Permanent`</code></td><td>Matrix Permanent</td></tr>
+<tr><td><code>`PermutationMatrix`</code></td><td>A Permutation Matrix</td></tr>
+<tr><td><code>`Piecewise`</code></td><td></td></tr>
+<tr><td><code>`Plane`</code></td><td></td></tr>
+<tr><td><code>`Point`</code></td><td>A point in a n-dimensional Euclidean space.</td></tr>
+<tr><td><code>`Point2D`</code></td><td>A point in a 2-dimensional Euclidean space.</td></tr>
+<tr><td><code>`Point3D`</code></td><td>A point in a 3-dimensional Euclidean space.</td></tr>
+<tr><td><code>`PoleError`</code></td><td></td></tr>
+<tr><td><code>`PolificationFailed`</code></td><td></td></tr>
+<tr><td><code>`Poly`</code></td><td></td></tr>
+<tr><td><code>`Polygon`</code></td><td>A two-dimensional polygon.</td></tr>
+<tr><td><code>`PolynomialDivisionFailed`</code></td><td></td></tr>
+<tr><td><code>`PolynomialError`</code></td><td></td></tr>
+<tr><td><code>`PolynomialRing`</code></td><td>A class for representing multivariate polynomial rings.</td></tr>
+<tr><td><code>`Pow`</code></td><td></td></tr>
+<tr><td><code>`PowerSet`</code></td><td>A symbolic object representing a power set.</td></tr>
+<tr><td><code>`PrecisionExhausted`</code></td><td></td></tr>
+<tr><td><code>`Predicate`</code></td><td></td></tr>
+<tr><td><code>`Product`</code></td><td></td></tr>
+<tr><td><code>`ProductSet`</code></td><td></td></tr>
+<tr><td><code>`PurePoly`</code></td><td>Class for representing pure polynomials.</td></tr>
+<tr><td><code>`PythonFiniteField`</code></td><td>Finite field based on Python's integers.</td></tr>
+<tr><td><code>`PythonIntegerRing`</code></td><td>Integer ring based on Python's ``int`` type.</td></tr>
+<tr><td><code>`PythonRational`</code></td><td></td></tr>
+<tr><td><code>`QQ_gmpy`</code></td><td>Rational field based on GMPY's ``mpq`` type.</td></tr>
+<tr><td><code>`QQ_python`</code></td><td>Rational field based on :py:class:`~.PythonRational`.</td></tr>
+<tr><td><code>`Quaternion`</code></td><td>Provides basic quaternion operations.</td></tr>
+<tr><td><code>`Range`</code></td><td></td></tr>
+<tr><td><code>`Rational`</code></td><td>Represents rational numbers (p/q) of any size.</td></tr>
+<tr><td><code>`RationalField`</code></td><td>Abstract base class for the domain :ref:`QQ`.</td></tr>
+<tr><td><code>`Ray`</code></td><td>A Ray is a semi-line in the space with a source point and a direction.</td></tr>
+<tr><td><code>`Ray2D`</code></td><td></td></tr>
+<tr><td><code>`Ray3D`</code></td><td></td></tr>
+<tr><td><code>`RealField`</code></td><td>Real numbers up to the given precision.</td></tr>
+<tr><td><code>`RealNumber`</code></td><td>Represent a floating-point number of arbitrary precision.</td></tr>
+<tr><td><code>`RefinementFailed`</code></td><td></td></tr>
+<tr><td><code>`RegularPolygon`</code></td><td></td></tr>
+<tr><td><code>`Rel`</code></td><td>Base class for all relation types.</td></tr>
+<tr><td><code>`RisingFactorial`</code></td><td></td></tr>
+<tr><td><code>`RootOf`</code></td><td>Represents a root of a univariate polynomial.</td></tr>
+<tr><td><code>`RootSum`</code></td><td>Represents a sum of all roots of a univariate polynomial.</td></tr>
+<tr><td><code>`SOPform`</code></td><td></td></tr>
+<tr><td><code>`Segment`</code></td><td>A line segment in space.</td></tr>
+<tr><td><code>`Segment2D`</code></td><td>A line segment in 2D space.</td></tr>
+<tr><td><code>`Segment3D`</code></td><td>A line segment in a 3D space.</td></tr>
+<tr><td><code>`SeqAdd`</code></td><td>Represents term-wise addition of sequences.</td></tr>
+<tr><td><code>`SeqFormula`</code></td><td></td></tr>
+<tr><td><code>`SeqMul`</code></td><td>Represents term-wise multiplication of sequences.</td></tr>
+<tr><td><code>`SeqPer`</code></td><td></td></tr>
+<tr><td><code>`Set`</code></td><td></td></tr>
+<tr><td><code>`ShapeError`</code></td><td>Wrong matrix shape</td></tr>
+<tr><td><code>`Shi`</code></td><td></td></tr>
+<tr><td><code>`Si`</code></td><td></td></tr>
+<tr><td><code>`Sieve`</code></td><td>An infinite list of prime numbers, implemented as a dynamically</td></tr>
+<tr><td><code>`SineTransform`</code></td><td></td></tr>
+<tr><td><code>`SingularityFunction`</code></td><td></td></tr>
+<tr><td><code>`SparseMatrix`</code></td><td></td></tr>
+<tr><td><code>`SparseNDimArray`</code></td><td></td></tr>
+<tr><td><code>`StrPrinter`</code></td><td></td></tr>
+<tr><td><code>`StrictGreaterThan`</code></td><td>Class representations of inequalities.</td></tr>
+<tr><td><code>`StrictLessThan`</code></td><td>Class representations of inequalities.</td></tr>
+<tr><td><code>`Subs`</code></td><td></td></tr>
+<tr><td><code>`Sum`</code></td><td></td></tr>
+<tr><td><code>`Symbol`</code></td><td></td></tr>
+<tr><td><code>`SymmetricDifference`</code></td><td>Represents the set of elements which are in either of the</td></tr>
+<tr><td><code>`SympifyError`</code></td><td></td></tr>
+<tr><td><code>`TableForm`</code></td><td></td></tr>
+<tr><td><code>`Trace`</code></td><td>Matrix Trace</td></tr>
+<tr><td><code>`Transpose`</code></td><td></td></tr>
+<tr><td><code>`Triangle`</code></td><td></td></tr>
+<tr><td><code>`Tuple`</code></td><td></td></tr>
+<tr><td><code>`Unequality`</code></td><td>An unequal relation between two objects.</td></tr>
+<tr><td><code>`UnevaluatedExpr`</code></td><td></td></tr>
+<tr><td><code>`UnificationFailed`</code></td><td></td></tr>
+<tr><td><code>`Union`</code></td><td></td></tr>
+<tr><td><code>`UnivariatePolynomialError`</code></td><td></td></tr>
+<tr><td><code>`Wild`</code></td><td></td></tr>
+<tr><td><code>`WildFunction`</code></td><td></td></tr>
+<tr><td><code>`Xor`</code></td><td></td></tr>
+<tr><td><code>`Ynm`</code></td><td></td></tr>
+<tr><td><code>`Ynm_c`</code></td><td></td></tr>
+<tr><td><code>`ZZ_gmpy`</code></td><td>Integer ring based on GMPY's ``mpz`` type.</td></tr>
+<tr><td><code>`ZZ_python`</code></td><td>Integer ring based on Python's ``int`` type.</td></tr>
+<tr><td><code>`ZeroMatrix`</code></td><td>The Matrix Zero 0 - additive identity</td></tr>
+<tr><td><code>`Znm`</code></td><td></td></tr>
+<tr><td><code>`abundance`</code></td><td>Returns the difference between the sum of the positive</td></tr>
+<tr><td><code>`acos`</code></td><td></td></tr>
+<tr><td><code>`acosh`</code></td><td></td></tr>
+<tr><td><code>`acot`</code></td><td></td></tr>
+<tr><td><code>`acoth`</code></td><td></td></tr>
+<tr><td><code>`acsc`</code></td><td></td></tr>
+<tr><td><code>`acsch`</code></td><td></td></tr>
+<tr><td><code>`adjoint`</code></td><td></td></tr>
+<tr><td><code>`airyai`</code></td><td></td></tr>
+<tr><td><code>`airyaiprime`</code></td><td></td></tr>
+<tr><td><code>`airybi`</code></td><td></td></tr>
+<tr><td><code>`airybiprime`</code></td><td></td></tr>
+<tr><td><code>`apart`</code></td><td></td></tr>
+<tr><td><code>`apart_list`</code></td><td></td></tr>
+<tr><td><code>`appellf1`</code></td><td></td></tr>
+<tr><td><code>`apply_finite_diff`</code></td><td></td></tr>
+<tr><td><code>`approximants`</code></td><td></td></tr>
+<tr><td><code>`are_similar`</code></td><td>Are two geometrical entities similar.</td></tr>
+<tr><td><code>`arg`</code></td><td></td></tr>
+<tr><td><code>`arity`</code></td><td>Return the arity of the function if it is known, else None.</td></tr>
+<tr><td><code>`as_finite_diff`</code></td><td></td></tr>
+<tr><td><code>`asec`</code></td><td></td></tr>
+<tr><td><code>`asech`</code></td><td></td></tr>
+<tr><td><code>`asin`</code></td><td></td></tr>
+<tr><td><code>`asinh`</code></td><td></td></tr>
+<tr><td><code>`ask`</code></td><td></td></tr>
+<tr><td><code>`assemble_partfrac_list`</code></td><td>Reassemble a full partial fraction decomposition</td></tr>
+<tr><td><code>`assoc_laguerre`</code></td><td></td></tr>
+<tr><td><code>`assoc_legendre`</code></td><td></td></tr>
+<tr><td><code>`assuming`</code></td><td></td></tr>
+<tr><td><code>`atan`</code></td><td></td></tr>
+<tr><td><code>`atan2`</code></td><td></td></tr>
+<tr><td><code>`atanh`</code></td><td></td></tr>
+<tr><td><code>`banded`</code></td><td>Returns a SparseMatrix from the given dictionary describing</td></tr>
+<tr><td><code>`bell`</code></td><td></td></tr>
+<tr><td><code>`bernoulli`</code></td><td></td></tr>
+<tr><td><code>`besseli`</code></td><td></td></tr>
+<tr><td><code>`besselj`</code></td><td></td></tr>
+<tr><td><code>`besselk`</code></td><td></td></tr>
+<tr><td><code>`besselsimp`</code></td><td></td></tr>
+<tr><td><code>`bessely`</code></td><td></td></tr>
+<tr><td><code>`beta`</code></td><td></td></tr>
+<tr><td><code>`betainc`</code></td><td></td></tr>
+<tr><td><code>`betainc_regularized`</code></td><td></td></tr>
+<tr><td><code>`binomial`</code></td><td>Implementation of the binomial coefficient. It can be defined</td></tr>
+<tr><td><code>`binomial_coefficients`</code></td><td>Return a dictionary containing pairs :math:`{(k1,k2) : C_kn}` where</td></tr>
+<tr><td><code>`binomial_coefficients_list`</code></td><td>Return a list of binomial coefficients as rows of the Pascal's</td></tr>
+<tr><td><code>`block_collapse`</code></td><td>Evaluates a block matrix expression</td></tr>
+<tr><td><code>`blockcut`</code></td><td>Cut a matrix expression into Blocks</td></tr>
+<tr><td><code>`bool_map`</code></td><td></td></tr>
+<tr><td><code>`bottom_up`</code></td><td>Apply ``F`` to all expressions in an expression tree from the</td></tr>
+<tr><td><code>`bspline_basis_set`</code></td><td></td></tr>
+<tr><td><code>`cacheit`</code></td><td></td></tr>
+<tr><td><code>`cancel`</code></td><td></td></tr>
+<tr><td><code>`capture`</code></td><td>Return the printed output of func().</td></tr>
+<tr><td><code>`carmichael`</code></td><td></td></tr>
+<tr><td><code>`cartes`</code></td><td>product(*iterables, repeat=1) --> product object</td></tr>
+<tr><td><code>`casoratian`</code></td><td>Given linear difference operator L of order 'k' and homogeneous</td></tr>
+<tr><td><code>`catalan`</code></td><td></td></tr>
+<tr><td><code>`cbrt`</code></td><td>Returns the principal cube root.</td></tr>
+<tr><td><code>`ccode`</code></td><td>Converts an expr to a string of c code</td></tr>
+<tr><td><code>`ceiling`</code></td><td></td></tr>
+<tr><td><code>`centroid`</code></td><td>Find the centroid (center of mass) of the collection containing only Points,</td></tr>
+<tr><td><code>`chebyshevt`</code></td><td></td></tr>
+<tr><td><code>`chebyshevt_poly`</code></td><td>Generates Chebyshev polynomial of the first kind of degree `n` in `x`.</td></tr>
+<tr><td><code>`chebyshevt_root`</code></td><td></td></tr>
+<tr><td><code>`chebyshevu`</code></td><td></td></tr>
+<tr><td><code>`chebyshevu_poly`</code></td><td>Generates Chebyshev polynomial of the second kind of degree `n` in `x`.</td></tr>
+<tr><td><code>`chebyshevu_root`</code></td><td></td></tr>
+<tr><td><code>`check_assumptions`</code></td><td></td></tr>
+<tr><td><code>`checkodesol`</code></td><td></td></tr>
+<tr><td><code>`checkpdesol`</code></td><td></td></tr>
+<tr><td><code>`checksol`</code></td><td></td></tr>
+<tr><td><code>`classify_ode`</code></td><td></td></tr>
+<tr><td><code>`classify_pde`</code></td><td></td></tr>
+<tr><td><code>`closest_points`</code></td><td>Return the subset of points from a set of points that were</td></tr>
+<tr><td><code>`cofactors`</code></td><td></td></tr>
+<tr><td><code>`collect`</code></td><td></td></tr>
+<tr><td><code>`collect_const`</code></td><td>A non-greedy collection of terms with similar number coefficients in</td></tr>
+<tr><td><code>`combsimp`</code></td><td></td></tr>
+<tr><td><code>`comp`</code></td><td>Return a bool indicating whether the error between z1 and z2</td></tr>
+<tr><td><code>`compose`</code></td><td></td></tr>
+<tr><td><code>`composite`</code></td><td>Return the nth composite number, with the composite numbers indexed as</td></tr>
+<tr><td><code>`compositepi`</code></td><td>Return the number of positive composite numbers less than or equal to n.</td></tr>
+<tr><td><code>`conjugate`</code></td><td></td></tr>
+<tr><td><code>`construct_domain`</code></td><td>Construct a minimal domain for a list of expressions.</td></tr>
+<tr><td><code>`content`</code></td><td></td></tr>
+<tr><td><code>`continued_fraction`</code></td><td>Return the continued fraction representation of a Rational or</td></tr>
+<tr><td><code>`continued_fraction_convergents`</code></td><td></td></tr>
+<tr><td><code>`continued_fraction_iterator`</code></td><td></td></tr>
+<tr><td><code>`continued_fraction_periodic`</code></td><td></td></tr>
+<tr><td><code>`continued_fraction_reduce`</code></td><td></td></tr>
+<tr><td><code>`convex_hull`</code></td><td>The convex hull surrounding the Points contained in the list of entities.</td></tr>
+<tr><td><code>`convolution`</code></td><td></td></tr>
+<tr><td><code>`cos`</code></td><td></td></tr>
+<tr><td><code>`cosh`</code></td><td></td></tr>
+<tr><td><code>`cosine_transform`</code></td><td></td></tr>
+<tr><td><code>`cot`</code></td><td></td></tr>
+<tr><td><code>`coth`</code></td><td></td></tr>
+<tr><td><code>`count_ops`</code></td><td></td></tr>
+<tr><td><code>`count_roots`</code></td><td></td></tr>
+<tr><td><code>`covering_product`</code></td><td></td></tr>
+<tr><td><code>`csc`</code></td><td></td></tr>
+<tr><td><code>`csch`</code></td><td></td></tr>
+<tr><td><code>`cse`</code></td><td>Perform common subexpression elimination on an expression.</td></tr>
+<tr><td><code>`cxxcode`</code></td><td>C++ equivalent of :func:`~.ccode`.</td></tr>
+<tr><td><code>`cycle_length`</code></td><td>For a given iterated sequence, return a generator that gives</td></tr>
+<tr><td><code>`cyclotomic_poly`</code></td><td>Generates cyclotomic polynomial of order `n` in `x`.</td></tr>
+<tr><td><code>`decompogen`</code></td><td></td></tr>
+<tr><td><code>`decompose`</code></td><td></td></tr>
+<tr><td><code>`default_sort_key`</code></td><td>Return a key that can be used for sorting.</td></tr>
+<tr><td><code>`deg`</code></td><td>Return the degree value for the given radians (pi = 180 degrees).</td></tr>
+<tr><td><code>`degree`</code></td><td></td></tr>
+<tr><td><code>`degree_list`</code></td><td></td></tr>
+<tr><td><code>`denom`</code></td><td></td></tr>
+<tr><td><code>`derive_by_array`</code></td><td></td></tr>
+<tr><td><code>`det`</code></td><td>Matrix Determinant</td></tr>
+<tr><td><code>`det_quick`</code></td><td></td></tr>
+<tr><td><code>`diag`</code></td><td>Returns a matrix with the provided values placed on the</td></tr>
+<tr><td><code>`diagonalize_vector`</code></td><td></td></tr>
+<tr><td><code>`dict_merge`</code></td><td>Merge dictionaries into a single dictionary.</td></tr>
+<tr><td><code>`diff`</code></td><td></td></tr>
+<tr><td><code>`difference_delta`</code></td><td>Difference Operator.</td></tr>
+<tr><td><code>`differentiate_finite`</code></td><td>Differentiate expr and replace Derivatives with finite differences.</td></tr>
+<tr><td><code>`digamma`</code></td><td></td></tr>
+<tr><td><code>`diophantine`</code></td><td></td></tr>
+<tr><td><code>`dirichlet_eta`</code></td><td></td></tr>
+<tr><td><code>`discrete_log`</code></td><td></td></tr>
+<tr><td><code>`discriminant`</code></td><td></td></tr>
+<tr><td><code>`div`</code></td><td></td></tr>
+<tr><td><code>`divisor_count`</code></td><td></td></tr>
+<tr><td><code>`divisor_sigma`</code></td><td></td></tr>
+<tr><td><code>`divisors`</code></td><td></td></tr>
+<tr><td><code>`doctest`</code></td><td></td></tr>
+<tr><td><code>`dotprint`</code></td><td>DOT description of a SymPy expression tree</td></tr>
+<tr><td><code>`dsolve`</code></td><td></td></tr>
+<tr><td><code>`egyptian_fraction`</code></td><td></td></tr>
+<tr><td><code>`elliptic_e`</code></td><td></td></tr>
+<tr><td><code>`elliptic_f`</code></td><td></td></tr>
+<tr><td><code>`elliptic_k`</code></td><td></td></tr>
+<tr><td><code>`elliptic_pi`</code></td><td></td></tr>
+<tr><td><code>`epath`</code></td><td></td></tr>
+<tr><td><code>`erf`</code></td><td></td></tr>
+<tr><td><code>`erf2`</code></td><td></td></tr>
+<tr><td><code>`erf2inv`</code></td><td></td></tr>
+<tr><td><code>`erfc`</code></td><td></td></tr>
+<tr><td><code>`erfcinv`</code></td><td></td></tr>
+<tr><td><code>`erfi`</code></td><td></td></tr>
+<tr><td><code>`erfinv`</code></td><td></td></tr>
+<tr><td><code>`euler`</code></td><td></td></tr>
+<tr><td><code>`euler_equations`</code></td><td></td></tr>
+<tr><td><code>`evaluate`</code></td><td>Control automatic evaluation</td></tr>
+<tr><td><code>`exp`</code></td><td></td></tr>
+<tr><td><code>`exp_polar`</code></td><td></td></tr>
+<tr><td><code>`expand`</code></td><td></td></tr>
+<tr><td><code>`expand_complex`</code></td><td></td></tr>
+<tr><td><code>`expand_func`</code></td><td></td></tr>
+<tr><td><code>`expand_log`</code></td><td></td></tr>
+<tr><td><code>`expand_mul`</code></td><td></td></tr>
+<tr><td><code>`expand_multinomial`</code></td><td></td></tr>
+<tr><td><code>`expand_power_base`</code></td><td></td></tr>
+<tr><td><code>`expand_power_exp`</code></td><td></td></tr>
+<tr><td><code>`expand_trig`</code></td><td></td></tr>
+<tr><td><code>`expint`</code></td><td></td></tr>
+<tr><td><code>`exptrigsimp`</code></td><td></td></tr>
+<tr><td><code>`exquo`</code></td><td></td></tr>
+<tr><td><code>`eye`</code></td><td>Create square identity matrix n x n</td></tr>
+<tr><td><code>`factor`</code></td><td></td></tr>
+<tr><td><code>`factor_list`</code></td><td></td></tr>
+<tr><td><code>`factor_nc`</code></td><td>Return the factored form of ``expr`` while handling non-commutative</td></tr>
+<tr><td><code>`factor_terms`</code></td><td>Remove common factors from terms in all arguments without</td></tr>
+<tr><td><code>`factorial`</code></td><td>Implementation of factorial function over nonnegative integers.</td></tr>
+<tr><td><code>`factorial2`</code></td><td>The double factorial `n!!`, not to be confused with `(n!)!`</td></tr>
+<tr><td><code>`factorint`</code></td><td></td></tr>
+<tr><td><code>`factorrat`</code></td><td></td></tr>
+<tr><td><code>`failing_assumptions`</code></td><td></td></tr>
+<tr><td><code>`farthest_points`</code></td><td>Return the subset of points from a set of points that were</td></tr>
+<tr><td><code>`fcode`</code></td><td>Converts an expr to a string of fortran code</td></tr>
+<tr><td><code>`ff`</code></td><td></td></tr>
+<tr><td><code>`fft`</code></td><td></td></tr>
+<tr><td><code>`fibonacci`</code></td><td></td></tr>
+<tr><td><code>`field`</code></td><td>Construct new rational function field returning (field, x1, ..., xn).</td></tr>
+<tr><td><code>`field_isomorphism`</code></td><td>Construct an isomorphism between two number fields.</td></tr>
+<tr><td><code>`filldedent`</code></td><td></td></tr>
+<tr><td><code>`finite_diff_weights`</code></td><td></td></tr>
+<tr><td><code>`flatten`</code></td><td></td></tr>
+<tr><td><code>`floor`</code></td><td></td></tr>
+<tr><td><code>`fourier_series`</code></td><td>Computes the Fourier trigonometric series expansion.</td></tr>
+<tr><td><code>`fourier_transform`</code></td><td></td></tr>
+<tr><td><code>`fps`</code></td><td></td></tr>
+<tr><td><code>`frac`</code></td><td>Represents the fractional part of x</td></tr>
+<tr><td><code>`fraction`</code></td><td>Returns a pair with expression's numerator and denominator.</td></tr>
+<tr><td><code>`fresnelc`</code></td><td></td></tr>
+<tr><td><code>`fresnels`</code></td><td></td></tr>
+<tr><td><code>`fu`</code></td><td>Attempt to simplify expression by using transformation rules given</td></tr>
+<tr><td><code>`fwht`</code></td><td></td></tr>
+<tr><td><code>`gamma`</code></td><td></td></tr>
+<tr><td><code>`gammasimp`</code></td><td></td></tr>
+<tr><td><code>`gcd`</code></td><td></td></tr>
+<tr><td><code>`gcd_list`</code></td><td></td></tr>
+<tr><td><code>`gcd_terms`</code></td><td>Compute the GCD of ``terms`` and put them together.</td></tr>
+<tr><td><code>`gcdex`</code></td><td></td></tr>
+<tr><td><code>`gegenbauer`</code></td><td></td></tr>
+<tr><td><code>`genocchi`</code></td><td></td></tr>
+<tr><td><code>`get_contraction_structure`</code></td><td>Determine dummy indices of ``expr`` and describe its structure</td></tr>
+<tr><td><code>`get_indices`</code></td><td>Determine the outer indices of expression ``expr``</td></tr>
+<tr><td><code>`gff`</code></td><td>Compute greatest factorial factorization of ``f``.</td></tr>
+<tr><td><code>`gff_list`</code></td><td></td></tr>
+<tr><td><code>`glsl_code`</code></td><td>Converts an expr to a string of GLSL code</td></tr>
+<tr><td><code>`groebner`</code></td><td></td></tr>
+<tr><td><code>`ground_roots`</code></td><td></td></tr>
+<tr><td><code>`group`</code></td><td></td></tr>
+<tr><td><code>`gruntz`</code></td><td></td></tr>
+<tr><td><code>`hadamard_product`</code></td><td></td></tr>
+<tr><td><code>`half_gcdex`</code></td><td></td></tr>
+<tr><td><code>`hankel1`</code></td><td></td></tr>
+<tr><td><code>`hankel2`</code></td><td></td></tr>
+<tr><td><code>`hankel_transform`</code></td><td></td></tr>
+<tr><td><code>`harmonic`</code></td><td></td></tr>
+<tr><td><code>`has_dups`</code></td><td>Return True if there are any duplicate elements in ``seq``.</td></tr>
+<tr><td><code>`has_variety`</code></td><td>Return True if there are any different elements in ``seq``.</td></tr>
+<tr><td><code>`hermite`</code></td><td></td></tr>
+<tr><td><code>`hermite_poly`</code></td><td>Generates Hermite polynomial of degree `n` in `x`.</td></tr>
+<tr><td><code>`hessian`</code></td><td>Compute Hessian matrix for a function f wrt parameters in varlist</td></tr>
+<tr><td><code>`hn1`</code></td><td></td></tr>
+<tr><td><code>`hn2`</code></td><td></td></tr>
+<tr><td><code>`homogeneous_order`</code></td><td></td></tr>
+<tr><td><code>`horner`</code></td><td></td></tr>
+<tr><td><code>`hyper`</code></td><td></td></tr>
+<tr><td><code>`hyperexpand`</code></td><td></td></tr>
+<tr><td><code>`hypersimilar`</code></td><td></td></tr>
+<tr><td><code>`hypersimp`</code></td><td>Given combinatorial term f(k) simplify its consecutive term ratio</td></tr>
+<tr><td><code>`idiff`</code></td><td>Return ``dy/dx`` assuming that ``eq == 0``.</td></tr>
+<tr><td><code>`ifft`</code></td><td></td></tr>
+<tr><td><code>`ifwht`</code></td><td></td></tr>
+<tr><td><code>`ilcm`</code></td><td>Computes integer least common multiple.</td></tr>
+<tr><td><code>`im`</code></td><td></td></tr>
+<tr><td><code>`imageset`</code></td><td></td></tr>
+<tr><td><code>`init_printing`</code></td><td></td></tr>
+<tr><td><code>`init_session`</code></td><td></td></tr>
+<tr><td><code>`integer_log`</code></td><td></td></tr>
+<tr><td><code>`integer_nthroot`</code></td><td></td></tr>
+<tr><td><code>`integrate`</code></td><td>integrate(f, var, ...)</td></tr>
+<tr><td><code>`interactive_traversal`</code></td><td>Traverse a tree asking a user which branch to choose.</td></tr>
+<tr><td><code>`interpolate`</code></td><td></td></tr>
+<tr><td><code>`interpolating_poly`</code></td><td>Construct Lagrange interpolating polynomial for ``n``</td></tr>
+<tr><td><code>`interpolating_spline`</code></td><td></td></tr>
+<tr><td><code>`intersecting_product`</code></td><td></td></tr>
+<tr><td><code>`intersection`</code></td><td>The intersection of a collection of GeometryEntity instances.</td></tr>
+<tr><td><code>`intervals`</code></td><td></td></tr>
+<tr><td><code>`intt`</code></td><td></td></tr>
+<tr><td><code>`inv_quick`</code></td><td>Return the inverse of ``M``, assuming that either</td></tr>
+<tr><td><code>`inverse_cosine_transform`</code></td><td></td></tr>
+<tr><td><code>`inverse_fourier_transform`</code></td><td></td></tr>
+<tr><td><code>`inverse_hankel_transform`</code></td><td></td></tr>
+<tr><td><code>`inverse_laplace_transform`</code></td><td></td></tr>
+<tr><td><code>`inverse_mellin_transform`</code></td><td></td></tr>
+<tr><td><code>`inverse_mobius_transform`</code></td><td></td></tr>
+<tr><td><code>`inverse_sine_transform`</code></td><td></td></tr>
+<tr><td><code>`invert`</code></td><td></td></tr>
+<tr><td><code>`is_abundant`</code></td><td>Returns True if ``n`` is an abundant number, else False.</td></tr>
+<tr><td><code>`is_amicable`</code></td><td>Returns True if the numbers `m` and `n` are "amicable", else False.</td></tr>
+<tr><td><code>`is_convex`</code></td><td>Determines the  convexity of the function passed in the argument.</td></tr>
+<tr><td><code>`is_decreasing`</code></td><td></td></tr>
+<tr><td><code>`is_deficient`</code></td><td>Returns True if ``n`` is a deficient number, else False.</td></tr>
+<tr><td><code>`is_increasing`</code></td><td></td></tr>
+<tr><td><code>`is_mersenne_prime`</code></td><td>Returns True if  ``n`` is a Mersenne prime, else False.</td></tr>
+<tr><td><code>`is_monotonic`</code></td><td></td></tr>
+<tr><td><code>`is_nthpow_residue`</code></td><td></td></tr>
+<tr><td><code>`is_perfect`</code></td><td>Returns True if ``n`` is a perfect number, else False.</td></tr>
+<tr><td><code>`is_primitive_root`</code></td><td></td></tr>
+<tr><td><code>`is_quad_residue`</code></td><td></td></tr>
+<tr><td><code>`is_strictly_decreasing`</code></td><td></td></tr>
+<tr><td><code>`is_strictly_increasing`</code></td><td></td></tr>
+<tr><td><code>`is_zero_dimensional`</code></td><td></td></tr>
+<tr><td><code>`isolate`</code></td><td>Give a rational isolating interval for an algebraic number.</td></tr>
+<tr><td><code>`isprime`</code></td><td></td></tr>
+<tr><td><code>`itermonomials`</code></td><td></td></tr>
+<tr><td><code>`jacobi`</code></td><td></td></tr>
+<tr><td><code>`jacobi_normalized`</code></td><td></td></tr>
+<tr><td><code>`jacobi_poly`</code></td><td>Generates Jacobi polynomial of degree `n` in `x`.</td></tr>
+<tr><td><code>`jacobi_symbol`</code></td><td></td></tr>
+<tr><td><code>`jn`</code></td><td></td></tr>
+<tr><td><code>`jn_zeros`</code></td><td></td></tr>
+<tr><td><code>`jordan_cell`</code></td><td></td></tr>
+<tr><td><code>`jscode`</code></td><td>Converts an expr to a string of javascript code</td></tr>
+<tr><td><code>`julia_code`</code></td><td>Converts `expr` to a string of Julia code.</td></tr>
+<tr><td><code>`kronecker_product`</code></td><td></td></tr>
+<tr><td><code>`kroneckersimp`</code></td><td></td></tr>
+<tr><td><code>`laguerre`</code></td><td></td></tr>
+<tr><td><code>`laguerre_poly`</code></td><td>Generates Laguerre polynomial of degree `n` in `x`.</td></tr>
+<tr><td><code>`lambdify`</code></td><td>Convert a SymPy expression into a function that allows for fast</td></tr>
+<tr><td><code>`laplace_transform`</code></td><td></td></tr>
+<tr><td><code>`lcm`</code></td><td></td></tr>
+<tr><td><code>`lcm_list`</code></td><td></td></tr>
+<tr><td><code>`legendre`</code></td><td></td></tr>
+<tr><td><code>`legendre_poly`</code></td><td>Generates Legendre polynomial of degree `n` in `x`.</td></tr>
+<tr><td><code>`legendre_symbol`</code></td><td></td></tr>
+<tr><td><code>`lerchphi`</code></td><td></td></tr>
+<tr><td><code>`li`</code></td><td></td></tr>
+<tr><td><code>`limit`</code></td><td>Computes the limit of ``e(z)`` at the point ``z0``.</td></tr>
+<tr><td><code>`limit_seq`</code></td><td>Finds the limit of a sequence as index ``n`` tends to infinity.</td></tr>
+<tr><td><code>`line_integrate`</code></td><td>line_integrate(field, Curve, variables)</td></tr>
+<tr><td><code>`linear_eq_to_matrix`</code></td><td></td></tr>
+<tr><td><code>`linsolve`</code></td><td></td></tr>
+<tr><td><code>`list2numpy`</code></td><td>Converts python list of SymPy expressions to a NumPy array.</td></tr>
+<tr><td><code>`ln`</code></td><td></td></tr>
+<tr><td><code>`log`</code></td><td></td></tr>
+<tr><td><code>`logcombine`</code></td><td></td></tr>
+<tr><td><code>`loggamma`</code></td><td></td></tr>
+<tr><td><code>`lowergamma`</code></td><td></td></tr>
+<tr><td><code>`lucas`</code></td><td></td></tr>
+<tr><td><code>`maple_code`</code></td><td>Converts ``expr`` to a string of Maple code.</td></tr>
+<tr><td><code>`marcumq`</code></td><td></td></tr>
+<tr><td><code>`mathematica_code`</code></td><td>Converts an expr to a string of the Wolfram Mathematica code</td></tr>
+<tr><td><code>`mathieuc`</code></td><td></td></tr>
+<tr><td><code>`mathieucprime`</code></td><td></td></tr>
+<tr><td><code>`mathieus`</code></td><td></td></tr>
+<tr><td><code>`mathieusprime`</code></td><td></td></tr>
+<tr><td><code>`matrix2numpy`</code></td><td>Converts SymPy's matrix to a NumPy array.</td></tr>
+<tr><td><code>`matrix_multiply_elementwise`</code></td><td>Return the Hadamard product (elementwise product) of A and B</td></tr>
+<tr><td><code>`matrix_symbols`</code></td><td></td></tr>
+<tr><td><code>`maximum`</code></td><td></td></tr>
+<tr><td><code>`meijerg`</code></td><td></td></tr>
+<tr><td><code>`mellin_transform`</code></td><td></td></tr>
+<tr><td><code>`memoize_property`</code></td><td>Property decorator that caches the value of potentially expensive</td></tr>
+<tr><td><code>`mersenne_prime_exponent`</code></td><td>Returns the exponent ``i`` for the nth Mersenne prime (which</td></tr>
+<tr><td><code>`minimal_polynomial`</code></td><td></td></tr>
+<tr><td><code>`minimum`</code></td><td></td></tr>
+<tr><td><code>`minpoly`</code></td><td></td></tr>
+<tr><td><code>`mobius`</code></td><td></td></tr>
+<tr><td><code>`mobius_transform`</code></td><td></td></tr>
+<tr><td><code>`mod_inverse`</code></td><td></td></tr>
+<tr><td><code>`monic`</code></td><td></td></tr>
+<tr><td><code>`motzkin`</code></td><td></td></tr>
+<tr><td><code>`multigamma`</code></td><td></td></tr>
+<tr><td><code>`multiline_latex`</code></td><td></td></tr>
+<tr><td><code>`multinomial_coefficients`</code></td><td>Return a dictionary containing pairs ``{(k1,k2,..,km) : C_kn}``</td></tr>
+<tr><td><code>`multiplicity`</code></td><td></td></tr>
+<tr><td><code>`n_order`</code></td><td>Returns the order of ``a`` modulo ``n``.</td></tr>
+<tr><td><code>`nextprime`</code></td><td>Return the ith prime greater than n.</td></tr>
+<tr><td><code>`nfloat`</code></td><td>Make all Rationals in expr Floats except those in exponents</td></tr>
+<tr><td><code>`nonlinsolve`</code></td><td></td></tr>
+<tr><td><code>`not_empty_in`</code></td><td></td></tr>
+<tr><td><code>`npartitions`</code></td><td></td></tr>
+<tr><td><code>`nroots`</code></td><td></td></tr>
+<tr><td><code>`nsimplify`</code></td><td></td></tr>
+<tr><td><code>`nsolve`</code></td><td></td></tr>
+<tr><td><code>`nth_power_roots_poly`</code></td><td></td></tr>
+<tr><td><code>`nthroot_mod`</code></td><td></td></tr>
+<tr><td><code>`ntt`</code></td><td></td></tr>
+<tr><td><code>`numbered_symbols`</code></td><td></td></tr>
+<tr><td><code>`numer`</code></td><td></td></tr>
+<tr><td><code>`octave_code`</code></td><td>Converts `expr` to a string of Octave (or Matlab) code.</td></tr>
+<tr><td><code>`ode_order`</code></td><td></td></tr>
+<tr><td><code>`ones`</code></td><td>Returns a matrix of ones with ``rows`` rows and ``cols`` columns;</td></tr>
+<tr><td><code>`ordered`</code></td><td>Return an iterator of the seq where keys are used to break ties in</td></tr>
+<tr><td><code>`pager_print`</code></td><td>Prints expr using the pager, in pretty form.</td></tr>
+<tr><td><code>`parallel_poly_from_expr`</code></td><td>Construct polynomials from expressions.</td></tr>
+<tr><td><code>`parse_expr`</code></td><td>Converts the string ``s`` to a SymPy expression, in ``local_dict``</td></tr>
+<tr><td><code>`partition`</code></td><td></td></tr>
+<tr><td><code>`pde_separate`</code></td><td>Separate variables in partial differential equation either by additive</td></tr>
+<tr><td><code>`pde_separate_add`</code></td><td></td></tr>
+<tr><td><code>`pde_separate_mul`</code></td><td></td></tr>
+<tr><td><code>`pdiv`</code></td><td></td></tr>
+<tr><td><code>`pdsolve`</code></td><td></td></tr>
+<tr><td><code>`per`</code></td><td>Matrix Permanent</td></tr>
+<tr><td><code>`perfect_power`</code></td><td></td></tr>
+<tr><td><code>`periodic_argument`</code></td><td></td></tr>
+<tr><td><code>`periodicity`</code></td><td></td></tr>
+<tr><td><code>`permutedims`</code></td><td></td></tr>
+<tr><td><code>`pexquo`</code></td><td></td></tr>
+<tr><td><code>`piecewise_fold`</code></td><td></td></tr>
+<tr><td><code>`plot`</code></td><td>Plots a function of a single variable as a curve.</td></tr>
+<tr><td><code>`plot_implicit`</code></td><td>A plot function to plot implicit equations / inequalities.</td></tr>
+<tr><td><code>`plot_parametric`</code></td><td></td></tr>
+<tr><td><code>`polar_lift`</code></td><td></td></tr>
+<tr><td><code>`polarify`</code></td><td></td></tr>
+<tr><td><code>`pollard_pm1`</code></td><td></td></tr>
+<tr><td><code>`pollard_rho`</code></td><td></td></tr>
+<tr><td><code>`poly`</code></td><td></td></tr>
+<tr><td><code>`poly_from_expr`</code></td><td>Construct a polynomial from an expression.</td></tr>
+<tr><td><code>`polygamma`</code></td><td></td></tr>
+<tr><td><code>`polylog`</code></td><td></td></tr>
+<tr><td><code>`posify`</code></td><td>Return ``eq`` (with generic symbols made positive) and a</td></tr>
+<tr><td><code>`postfixes`</code></td><td></td></tr>
+<tr><td><code>`postorder_traversal`</code></td><td></td></tr>
+<tr><td><code>`powdenest`</code></td><td></td></tr>
+<tr><td><code>`powsimp`</code></td><td></td></tr>
+<tr><td><code>`pprint`</code></td><td>Prints expr in pretty form.</td></tr>
+<tr><td><code>`pprint_try_use_unicode`</code></td><td>See if unicode output is available and leverage it if possible</td></tr>
+<tr><td><code>`pprint_use_unicode`</code></td><td>Set whether pretty-printer should use unicode by default</td></tr>
+<tr><td><code>`pquo`</code></td><td></td></tr>
+<tr><td><code>`prefixes`</code></td><td></td></tr>
+<tr><td><code>`prem`</code></td><td></td></tr>
+<tr><td><code>`preorder_traversal`</code></td><td></td></tr>
+<tr><td><code>`pretty_print`</code></td><td>Prints expr in pretty form.</td></tr>
+<tr><td><code>`preview`</code></td><td></td></tr>
+<tr><td><code>`prevprime`</code></td><td>Return the largest prime smaller than n.</td></tr>
+<tr><td><code>`prime`</code></td><td>Return the nth prime, with the primes indexed as prime(1) = 2,</td></tr>
+<tr><td><code>`primefactors`</code></td><td>Return a sorted list of n's prime factors, ignoring multiplicity</td></tr>
+<tr><td><code>`primenu`</code></td><td></td></tr>
+<tr><td><code>`primeomega`</code></td><td></td></tr>
+<tr><td><code>`primepi`</code></td><td>Represents the prime counting function pi(n) = the number</td></tr>
+<tr><td><code>`primerange`</code></td><td>Generate a list of all prime numbers in the range [a, b).</td></tr>
+<tr><td><code>`primitive`</code></td><td></td></tr>
+<tr><td><code>`primitive_element`</code></td><td>Construct a common number field for all extensions.</td></tr>
+<tr><td><code>`primitive_root`</code></td><td></td></tr>
+<tr><td><code>`primorial`</code></td><td></td></tr>
+<tr><td><code>`principal_branch`</code></td><td></td></tr>
+<tr><td><code>`print_ccode`</code></td><td>Prints C representation of the given expression.</td></tr>
+<tr><td><code>`print_fcode`</code></td><td>Prints the Fortran representation of the given expression.</td></tr>
+<tr><td><code>`print_glsl`</code></td><td>Prints the GLSL representation of the given expression.</td></tr>
+<tr><td><code>`print_gtk`</code></td><td>Print to Gtkmathview, a gtk widget capable of rendering MathML.</td></tr>
+<tr><td><code>`print_jscode`</code></td><td>Prints the Javascript representation of the given expression.</td></tr>
+<tr><td><code>`print_latex`</code></td><td>Prints LaTeX representation of the given expression. Takes the same</td></tr>
+<tr><td><code>`print_maple_code`</code></td><td>Prints the Maple representation of the given expression.</td></tr>
+<tr><td><code>`print_mathml`</code></td><td></td></tr>
+<tr><td><code>`print_python`</code></td><td>Print output of python() function</td></tr>
+<tr><td><code>`print_rcode`</code></td><td>Prints R representation of the given expression.</td></tr>
+<tr><td><code>`print_tree`</code></td><td></td></tr>
+<tr><td><code>`prod`</code></td><td>Return product of elements of a. Start with int 1 so if only</td></tr>
+<tr><td><code>`product`</code></td><td></td></tr>
+<tr><td><code>`proper_divisor_count`</code></td><td></td></tr>
+<tr><td><code>`proper_divisors`</code></td><td></td></tr>
+<tr><td><code>`public`</code></td><td></td></tr>
+<tr><td><code>`pycode`</code></td><td>Converts an expr to a string of Python code</td></tr>
+<tr><td><code>`python`</code></td><td>Return Python interpretation of passed expression</td></tr>
+<tr><td><code>`quadratic_congruence`</code></td><td></td></tr>
+<tr><td><code>`quadratic_residues`</code></td><td></td></tr>
+<tr><td><code>`quo`</code></td><td></td></tr>
+<tr><td><code>`rad`</code></td><td>Return the radian value for the given degrees (pi = 180 degrees).</td></tr>
+<tr><td><code>`radsimp`</code></td><td></td></tr>
+<tr><td><code>`randMatrix`</code></td><td>Create random matrix with dimensions ``r`` x ``c``. If ``c`` is omitted</td></tr>
+<tr><td><code>`random_poly`</code></td><td>Generates a polynomial of degree ``n`` with coefficients in</td></tr>
+<tr><td><code>`randprime`</code></td><td>Return a random prime number in the range [a, b).</td></tr>
+<tr><td><code>`rational_interpolate`</code></td><td></td></tr>
+<tr><td><code>`ratsimp`</code></td><td></td></tr>
+<tr><td><code>`ratsimpmodprime`</code></td><td></td></tr>
+<tr><td><code>`rcode`</code></td><td>Converts an expr to a string of r code</td></tr>
+<tr><td><code>`rcollect`</code></td><td></td></tr>
+<tr><td><code>`re`</code></td><td></td></tr>
+<tr><td><code>`real_root`</code></td><td>Return the real *n*'th-root of *arg* if possible.</td></tr>
+<tr><td><code>`real_roots`</code></td><td></td></tr>
+<tr><td><code>`reduce_abs_inequalities`</code></td><td>Reduce a system of inequalities with nested absolute values.</td></tr>
+<tr><td><code>`reduce_abs_inequality`</code></td><td>Reduce an inequality with nested absolute values.</td></tr>
+<tr><td><code>`reduce_inequalities`</code></td><td>Reduce a system of inequalities with rational coefficients.</td></tr>
+<tr><td><code>`reduced`</code></td><td></td></tr>
+<tr><td><code>`reduced_totient`</code></td><td></td></tr>
+<tr><td><code>`refine`</code></td><td></td></tr>
+<tr><td><code>`refine_root`</code></td><td></td></tr>
+<tr><td><code>`register_handler`</code></td><td></td></tr>
+<tr><td><code>`rem`</code></td><td></td></tr>
+<tr><td><code>`remove_handler`</code></td><td></td></tr>
+<tr><td><code>`reshape`</code></td><td>Reshape the sequence according to the template in ``how``.</td></tr>
+<tr><td><code>`residue`</code></td><td></td></tr>
+<tr><td><code>`resultant`</code></td><td></td></tr>
+<tr><td><code>`rf`</code></td><td></td></tr>
+<tr><td><code>`riemann_xi`</code></td><td></td></tr>
+<tr><td><code>`ring`</code></td><td>Construct a polynomial ring returning ``(ring, x_1, ..., x_n)``.</td></tr>
+<tr><td><code>`root`</code></td><td>Returns the *k*-th *n*-th root of ``arg``.</td></tr>
+<tr><td><code>`rootof`</code></td><td>An indexed root of a univariate polynomial.</td></tr>
+<tr><td><code>`roots`</code></td><td></td></tr>
+<tr><td><code>`rot_axis1`</code></td><td>Returns a rotation matrix for a rotation of theta (in radians) about</td></tr>
+<tr><td><code>`rot_axis2`</code></td><td>Returns a rotation matrix for a rotation of theta (in radians) about</td></tr>
+<tr><td><code>`rot_axis3`</code></td><td>Returns a rotation matrix for a rotation of theta (in radians) about</td></tr>
+<tr><td><code>`rotations`</code></td><td>Return a generator giving the items in s as list where</td></tr>
+<tr><td><code>`rsolve`</code></td><td></td></tr>
+<tr><td><code>`rsolve_hyper`</code></td><td></td></tr>
+<tr><td><code>`rsolve_poly`</code></td><td></td></tr>
+<tr><td><code>`rsolve_ratio`</code></td><td></td></tr>
+<tr><td><code>`rust_code`</code></td><td>Converts an expr to a string of Rust code</td></tr>
+<tr><td><code>`satisfiable`</code></td><td></td></tr>
+<tr><td><code>`sec`</code></td><td></td></tr>
+<tr><td><code>`sech`</code></td><td></td></tr>
+<tr><td><code>`separatevars`</code></td><td></td></tr>
+<tr><td><code>`sequence`</code></td><td></td></tr>
+<tr><td><code>`series`</code></td><td>Series expansion of expr around point `x = x0`.</td></tr>
+<tr><td><code>`seterr`</code></td><td></td></tr>
+<tr><td><code>`sfield`</code></td><td>Construct a field deriving generators and domain</td></tr>
+<tr><td><code>`shape`</code></td><td></td></tr>
+<tr><td><code>`sift`</code></td><td></td></tr>
+<tr><td><code>`sign`</code></td><td></td></tr>
+<tr><td><code>`signsimp`</code></td><td>Make all Add sub-expressions canonical wrt sign.</td></tr>
+<tr><td><code>`simplify`</code></td><td>Simplifies the given expression.</td></tr>
+<tr><td><code>`simplify_logic`</code></td><td></td></tr>
+<tr><td><code>`sin`</code></td><td></td></tr>
+<tr><td><code>`sinc`</code></td><td></td></tr>
+<tr><td><code>`sine_transform`</code></td><td></td></tr>
+<tr><td><code>`singularities`</code></td><td></td></tr>
+<tr><td><code>`singularityintegrate`</code></td><td></td></tr>
+<tr><td><code>`sinh`</code></td><td></td></tr>
+<tr><td><code>`solve`</code></td><td></td></tr>
+<tr><td><code>`solve_linear`</code></td><td></td></tr>
+<tr><td><code>`solve_linear_system`</code></td><td></td></tr>
+<tr><td><code>`solve_linear_system_LU`</code></td><td></td></tr>
+<tr><td><code>`solve_poly_inequality`</code></td><td>Solve a polynomial inequality with rational coefficients.</td></tr>
+<tr><td><code>`solve_poly_system`</code></td><td></td></tr>
+<tr><td><code>`solve_rational_inequalities`</code></td><td>Solve a system of rational inequalities with rational coefficients.</td></tr>
+<tr><td><code>`solve_triangulated`</code></td><td></td></tr>
+<tr><td><code>`solve_undetermined_coeffs`</code></td><td></td></tr>
+<tr><td><code>`solve_univariate_inequality`</code></td><td>Solves a real univariate inequality.</td></tr>
+<tr><td><code>`solveset`</code></td><td>Solves a given inequality or equation with set as output</td></tr>
+<tr><td><code>`source`</code></td><td></td></tr>
+<tr><td><code>`sqf`</code></td><td></td></tr>
+<tr><td><code>`sqf_list`</code></td><td></td></tr>
+<tr><td><code>`sqf_norm`</code></td><td></td></tr>
+<tr><td><code>`sqf_part`</code></td><td></td></tr>
+<tr><td><code>`sqrt`</code></td><td>Returns the principal square root.</td></tr>
+<tr><td><code>`sqrt_mod`</code></td><td></td></tr>
+<tr><td><code>`sqrt_mod_iter`</code></td><td></td></tr>
+<tr><td><code>`sqrtdenest`</code></td><td>Denests sqrts in an expression that contain other square roots</td></tr>
+<tr><td><code>`sring`</code></td><td>Construct a ring deriving generators and domain from options and input expressions.</td></tr>
+<tr><td><code>`stationary_points`</code></td><td></td></tr>
+<tr><td><code>`stieltjes`</code></td><td></td></tr>
+<tr><td><code>`sturm`</code></td><td></td></tr>
+<tr><td><code>`subfactorial`</code></td><td>The subfactorial counts the derangements of n items and is</td></tr>
+<tr><td><code>`subresultants`</code></td><td></td></tr>
+<tr><td><code>`subsets`</code></td><td>Generates all `k`-subsets (combinations) from an `n`-element set, ``seq``.</td></tr>
+<tr><td><code>`substitution`</code></td><td></td></tr>
+<tr><td><code>`summation`</code></td><td></td></tr>
+<tr><td><code>`swinnerton_dyer_poly`</code></td><td>Generates n-th Swinnerton-Dyer polynomial in `x`.</td></tr>
+<tr><td><code>`symarray`</code></td><td>Create a numpy ndarray of symbols (as an object array).</td></tr>
+<tr><td><code>`symbols`</code></td><td></td></tr>
+<tr><td><code>`symmetric_poly`</code></td><td>Generates symmetric polynomial of order `n`.</td></tr>
+<tr><td><code>`symmetrize`</code></td><td></td></tr>
+<tr><td><code>`sympify`</code></td><td></td></tr>
+<tr><td><code>`take`</code></td><td>Return ``n`` items from ``iter`` iterator.</td></tr>
+<tr><td><code>`tan`</code></td><td></td></tr>
+<tr><td><code>`tanh`</code></td><td></td></tr>
+<tr><td><code>`tensorcontraction`</code></td><td></td></tr>
+<tr><td><code>`tensordiagonal`</code></td><td></td></tr>
+<tr><td><code>`tensorproduct`</code></td><td></td></tr>
+<tr><td><code>`terms_gcd`</code></td><td></td></tr>
+<tr><td><code>`test`</code></td><td></td></tr>
+<tr><td><code>`textplot`</code></td><td></td></tr>
+<tr><td><code>`threaded`</code></td><td>Apply ``func`` to sub--elements of an object, including :class:`~.Add`.</td></tr>
+<tr><td><code>`timed`</code></td><td>Adaptively measure execution time of a function.</td></tr>
+<tr><td><code>`to_cnf`</code></td><td></td></tr>
+<tr><td><code>`to_dnf`</code></td><td></td></tr>
+<tr><td><code>`to_nnf`</code></td><td></td></tr>
+<tr><td><code>`to_number_field`</code></td><td>Express `extension` in the field generated by `theta`.</td></tr>
+<tr><td><code>`together`</code></td><td></td></tr>
+<tr><td><code>`topological_sort`</code></td><td></td></tr>
+<tr><td><code>`total_degree`</code></td><td></td></tr>
+<tr><td><code>`totient`</code></td><td></td></tr>
+<tr><td><code>`trace`</code></td><td>Trace of a Matrix.  Sum of the diagonal elements.</td></tr>
+<tr><td><code>`trailing`</code></td><td>Count the number of trailing zero digits in the binary</td></tr>
+<tr><td><code>`transpose`</code></td><td></td></tr>
+<tr><td><code>`tribonacci`</code></td><td></td></tr>
+<tr><td><code>`trigamma`</code></td><td></td></tr>
+<tr><td><code>`trigsimp`</code></td><td></td></tr>
+<tr><td><code>`trunc`</code></td><td></td></tr>
+<tr><td><code>`unbranched_argument`</code></td><td></td></tr>
+<tr><td><code>`unflatten`</code></td><td>Group ``iter`` into tuples of length ``n``. Raise an error if</td></tr>
+<tr><td><code>`unpolarify`</code></td><td></td></tr>
+<tr><td><code>`uppergamma`</code></td><td></td></tr>
+<tr><td><code>`use`</code></td><td></td></tr>
+<tr><td><code>`var`</code></td><td></td></tr>
+<tr><td><code>`variations`</code></td><td>Returns a generator of the n-sized variations of ``seq`` (size N).</td></tr>
+<tr><td><code>`vectorize`</code></td><td></td></tr>
+<tr><td><code>`vfield`</code></td><td>Construct new rational function field and inject generators into global namespace.</td></tr>
+<tr><td><code>`viete`</code></td><td></td></tr>
+<tr><td><code>`vring`</code></td><td>Construct a polynomial ring and inject ``x_1, ..., x_n`` into the global namespace.</td></tr>
+<tr><td><code>`wronskian`</code></td><td></td></tr>
+<tr><td><code>`xfield`</code></td><td>Construct new rational function field returning (field, (x1, ..., xn)).</td></tr>
+<tr><td><code>`xring`</code></td><td>Construct a polynomial ring returning ``(ring, (x_1, ..., x_n))``.</td></tr>
+<tr><td><code>`xthreaded`</code></td><td>Apply ``func`` to sub--elements of an object, excluding :class:`~.Add`.</td></tr>
+<tr><td><code>`yn`</code></td><td></td></tr>
+<tr><td><code>`zeros`</code></td><td>Returns a matrix of zeros with ``rows`` rows and ``cols`` columns;</td></tr>
+<tr><td><code>`zeta`</code></td><td></td></tr>
+</tbody>
+</table>
+
+</body>
+</html>

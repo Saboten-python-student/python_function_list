@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>pygrib 関数・メソッド一覧</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 40px; }
+        th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+        th { background-color: #f0f0f0; }
+        h2 { border-left: 4px solid #007acc; padding-left: 8px; }
+        pre { background-color: #f7f7f7; padding: 10px; border: 1px solid #ccc; overflow-x: auto; }
+    </style>
+</head>
+<body>
+<h1>pygrib 関数・メソッド一覧</h1>
+<h2>基本構成</h2>
+<table>
+<thead><tr><th>名前 / 属性名</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>pygrib.open()</code></td><td>GRIBファイルを開く（イテレータ取得）</td></tr>
+<tr><td><code>grb.select()</code></td><td>メッセージの条件抽出（変数、時間、高度など）</td></tr>
+<tr><td><code>grb.message(index)</code></td><td>指定番号のメッセージを取得</td></tr>
+<tr><td><code>grb.read()</code></td><td>全メッセージをリストとして取得</td></tr>
+</tbody>
+</table>
+<h2>GRIBメッセージの属性（1つの変数データ）</h2>
+<table>
+<thead><tr><th>名前 / 属性名</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>grb.name</code></td><td>変数名（例：Temperature）</td></tr>
+<tr><td><code>grb.shortName</code></td><td>省略名（例：t）</td></tr>
+<tr><td><code>grb.level</code></td><td>高度（例：850）</td></tr>
+<tr><td><code>grb.validDate</code></td><td>有効日時</td></tr>
+<tr><td><code>grb.units</code></td><td>単位（例：K, m/s）</td></tr>
+<tr><td><code>grb.values</code></td><td>データ本体（2次元配列）</td></tr>
+<tr><td><code>grb.latlons()</code></td><td>緯度・経度の2次元配列を取得</td></tr>
+</tbody>
+</table>
+
+<h2>代表的な処理フロー</h2>
+<pre><code>import pygrib
+grbs = pygrib.open("sample.grib2")
+
+# 指定条件でメッセージ取得
+t850 = grbs.select(name="Temperature", level=850)[0]
+
+# 値と座標の取得
+data = t850.values
+lats, lons = t850.latlons()
+</code></pre>
+
+<h2>注意点</h2>
+<ul>
+  <li><strong>pygrib</strong> の内部は <strong>eccodes</strong> に依存しており、事前にCライブラリが必要です</li>
+  <li>ファイルが大きい場合は <code>.read()</code> より <code>for grb in grbs:</code> が推奨されます</li>
+</ul>
+
+</body>
+</html>

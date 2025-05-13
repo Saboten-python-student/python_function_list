@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>NumPy 関数・メソッド一覧</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 40px; }
+        th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+        th { background-color: #f0f0f0; }
+        h2 { border-left: 4px solid #007acc; padding-left: 8px; }
+    </style>
+</head>
+<body>
+<h1>NumPy 関数・メソッド一覧</h1>
+<h2>配列の作成</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>array()</code></td><td>Pythonのリストなどから配列を作成</td></tr>
+<tr><td><code>zeros(), ones(), empty()</code></td><td>ゼロ・1・未初期化配列を作成</td></tr>
+<tr><td><code>arange(), linspace()</code></td><td>等間隔の数値配列を生成</td></tr>
+<tr><td><code>reshape()</code></td><td>配列の形状変更</td></tr>
+<tr><td><code>full()</code></td><td>任意の値で満たされた配列</td></tr>
+</tbody>
+</table>
+<h2>基本演算</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>add(), subtract(), multiply(), divide()</code></td><td>四則演算</td></tr>
+<tr><td><code>power(), mod(), abs()</code></td><td>累乗、剰余、絶対値</td></tr>
+<tr><td><code>exp(), log(), sqrt()</code></td><td>指数、対数、平方根</td></tr>
+<tr><td><code>sin(), cos(), tan()</code></td><td>三角関数</td></tr>
+</tbody>
+</table>
+<h2>統計関数</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>mean(), median()</code></td><td>平均、中央値</td></tr>
+<tr><td><code>std(), var()</code></td><td>標準偏差、分散</td></tr>
+<tr><td><code>min(), max()</code></td><td>最小・最大値</td></tr>
+<tr><td><code>sum(), prod()</code></td><td>総和、積</td></tr>
+</tbody>
+</table>
+<h2>配列操作</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>concatenate(), stack(), hstack(), vstack()</code></td><td>配列の結合</td></tr>
+<tr><td><code>split(), hsplit(), vsplit()</code></td><td>配列の分割</td></tr>
+<tr><td><code>transpose(), swapaxes()</code></td><td>軸の入れ替え</td></tr>
+<tr><td><code>flatten(), ravel()</code></td><td>一次元への変換</td></tr>
+<tr><td><code>repeat(), tile()</code></td><td>繰り返し生成</td></tr>
+</tbody>
+</table>
+<h2>条件・論理演算</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>where()</code></td><td>条件に応じた値の選択</td></tr>
+<tr><td><code>any(), all()</code></td><td>真偽値の集約</td></tr>
+<tr><td><code>isnan(), isfinite()</code></td><td>NaN、有限値の判定</td></tr>
+</tbody>
+</table>
+<h2>線形代数（np.linalg）</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>dot(), matmul()</code></td><td>行列積</td></tr>
+<tr><td><code>inv(), det()</code></td><td>逆行列、行列式</td></tr>
+<tr><td><code>eig(), svd()</code></td><td>固有値分解、特異値分解</td></tr>
+<tr><td><code>solve()</code></td><td>連立方程式の解法</td></tr>
+</tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Plotly 関数・モジュール一覧</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 40px; }
+        th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+        th { background-color: #f0f0f0; }
+        h2 { border-left: 4px solid #007acc; padding-left: 8px; }
+    </style>
+</head>
+<body>
+<h1>Plotly 関数・モジュール一覧（Python版）</h1>
+<h2>基本構成</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>plotly.graph_objects（go）</code></td><td>グラフオブジェクトを直接定義（柔軟・詳細）</td></tr>
+<tr><td><code>plotly.express（px）</code></td><td>高レベルAPIで簡単に可視化（短く書ける）</td></tr>
+</tbody>
+</table>
+<h2>主要な図表（Express版）</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>px.line()</code></td><td>折れ線グラフ</td></tr>
+<tr><td><code>px.scatter()</code></td><td>散布図</td></tr>
+<tr><td><code>px.bar()</code></td><td>棒グラフ</td></tr>
+<tr><td><code>px.density_contour()</code></td><td>密度等高線図</td></tr>
+<tr><td><code>px.imshow()</code></td><td>画像／2Dカラーマップ表示</td></tr>
+<tr><td><code>px.line_3d(), px.scatter_3d()</code></td><td>3D折れ線・散布図</td></tr>
+</tbody>
+</table>
+<h2>グラフオブジェクト（go）による柔軟な構成</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>go.Figure()</code></td><td>図全体のオブジェクト</td></tr>
+<tr><td><code>go.Scatter(), go.Bar(), go.Surface()</code></td><td>各種トレース（描画要素）</td></tr>
+<tr><td><code>fig.add_trace()</code></td><td>トレースの追加</td></tr>
+<tr><td><code>fig.update_layout()</code></td><td>全体のレイアウト設定</td></tr>
+<tr><td><code>fig.update_traces()</code></td><td>トレース共通設定の一括更新</td></tr>
+<tr><td><code>fig.show()</code></td><td>描画表示</td></tr>
+</tbody>
+</table>
+<h2>インタラクティブ制御</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>fig.update_xaxes(), update_yaxes()</code></td><td>軸の設定</td></tr>
+<tr><td><code>fig.add_annotation()</code></td><td>注釈・矢印の追加</td></tr>
+<tr><td><code>fig.add_shape()</code></td><td>線・長方形などの図形追加</td></tr>
+<tr><td><code>fig.update_layout(sliders=...)</code></td><td>スライダーによる可変プロット</td></tr>
+<tr><td><code>plotly.subplots.make_subplots()</code></td><td>サブプロットの作成</td></tr>
+</tbody>
+</table>
+<h2>保存・エクスポート</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>fig.write_image()</code></td><td>PNGやSVGへの出力（kaleidoが必要）</td></tr>
+<tr><td><code>fig.write_html()</code></td><td>HTMLファイルに出力</td></tr>
+</tbody>
+</table>
+
+</body>
+</html>

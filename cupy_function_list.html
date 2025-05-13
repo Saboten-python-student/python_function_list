@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>CuPy 関数・メソッド一覧</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 40px; }
+        th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+        th { background-color: #f0f0f0; }
+        h2 { border-left: 4px solid #007acc; padding-left: 8px; }
+    </style>
+</head>
+<body>
+<h1>CuPy 関数・メソッド一覧</h1>
+<h2>配列の作成</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>cupy.array()</code></td><td>PythonリストやNumPy配列からCuPy配列を作成</td></tr>
+<tr><td><code>cupy.zeros(), cupy.ones(), cupy.empty()</code></td><td>初期化済み配列の生成</td></tr>
+<tr><td><code>cupy.arange(), cupy.linspace()</code></td><td>等間隔の配列生成</td></tr>
+<tr><td><code>cupy.full()</code></td><td>任意の値で埋める配列生成</td></tr>
+</tbody>
+</table>
+<h2>基本演算（NumPyと同様のAPI）</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>cupy.add(), cupy.subtract()</code></td><td>加減算</td></tr>
+<tr><td><code>cupy.multiply(), cupy.divide()</code></td><td>乗除算</td></tr>
+<tr><td><code>cupy.power(), cupy.mod()</code></td><td>累乗、剰余</td></tr>
+<tr><td><code>cupy.exp(), cupy.log(), cupy.sqrt()</code></td><td>指数・対数・平方根</td></tr>
+</tbody>
+</table>
+<h2>配列操作</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>cupy.reshape(), cupy.transpose()</code></td><td>形状変更・軸の入れ替え</td></tr>
+<tr><td><code>cupy.concatenate(), cupy.stack()</code></td><td>配列の結合</td></tr>
+<tr><td><code>cupy.ravel(), cupy.flatten()</code></td><td>一次元化</td></tr>
+<tr><td><code>cupy.copy()</code></td><td>配列のコピー</td></tr>
+</tbody>
+</table>
+<h2>統計・集約処理</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>cupy.mean(), cupy.std(), cupy.var()</code></td><td>平均、標準偏差、分散</td></tr>
+<tr><td><code>cupy.min(), cupy.max()</code></td><td>最小・最大値</td></tr>
+<tr><td><code>cupy.sum(), cupy.prod()</code></td><td>総和、積</td></tr>
+</tbody>
+</table>
+<h2>条件・論理演算</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>cupy.where()</code></td><td>条件に応じた値の選択</td></tr>
+<tr><td><code>cupy.isnan(), cupy.isfinite()</code></td><td>NaN、有限値の検出</td></tr>
+<tr><td><code>cupy.any(), cupy.all()</code></td><td>論理積・和の集約</td></tr>
+</tbody>
+</table>
+<h2>高速演算・特殊処理</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>cupy.fft.fft(), ifft()</code></td><td>高速フーリエ変換（FFT）</td></tr>
+<tr><td><code>cupy.linalg.inv(), svd(), solve()</code></td><td>線形代数（行列計算）</td></tr>
+<tr><td><code>cupy.asnumpy()</code></td><td>CuPy配列をNumPy配列に変換</td></tr>
+<tr><td><code>cupy.cuda.Device()</code></td><td>CUDAデバイスの制御</td></tr>
+</tbody>
+</table>
+
+</body>
+</html>

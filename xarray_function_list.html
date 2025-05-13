@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>xarray 関数・メソッド一覧</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 40px; }
+        th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+        th { background-color: #f0f0f0; }
+        h2 { border-left: 4px solid #007acc; padding-left: 8px; }
+    </style>
+</head>
+<body>
+<h1>xarray 関数・メソッド一覧</h1>
+<h2>データの読み込みと基本操作</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>open_dataset()</code></td><td>NetCDFなどからデータセットを読み込む</td></tr>
+<tr><td><code>open_mfdataset()</code></td><td>複数ファイルを一括で読み込む</td></tr>
+<tr><td><code>.sel()</code></td><td>指定座標の最近傍データを抽出</td></tr>
+<tr><td><code>.isel()</code></td><td>インデックス番号でデータを抽出</td></tr>
+<tr><td><code>.squeeze()</code></td><td>サイズ1の次元を除去</td></tr>
+<tr><td><code>.transpose()</code></td><td>次元の順番を並び替える</td></tr>
+</tbody>
+</table>
+<h2>データ解析・統計処理</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>.mean(dim=)</code></td><td>指定次元で平均を取る</td></tr>
+<tr><td><code>.sum(dim=)</code></td><td>指定次元で合計を取る</td></tr>
+<tr><td><code>.std(dim=)</code></td><td>標準偏差</td></tr>
+<tr><td><code>.max(dim=) / .min(dim=)</code></td><td>最大・最小値の取得</td></tr>
+<tr><td><code>.rolling()</code></td><td>移動平均などのロール処理</td></tr>
+<tr><td><code>.groupby()</code></td><td>時間などの属性でグループ化</td></tr>
+</tbody>
+</table>
+<h2>データ構造・変換</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>.values</code></td><td>NumPy配列として取得</td></tr>
+<tr><td><code>.to_dataframe()</code></td><td>pandas DataFrameに変換</td></tr>
+<tr><td><code>.expand_dims()</code></td><td>新しい次元を追加</td></tr>
+<tr><td><code>.stack() / .unstack()</code></td><td>次元の合成・分解</td></tr>
+<tr><td><code>.rename()</code></td><td>次元や変数の名前変更</td></tr>
+</tbody>
+</table>
+<h2>補助操作</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>.load()</code></td><td>データを読み込み（遅延読み込みの解除）</td></tr>
+<tr><td><code>.compute()</code></td><td>Daskなどの遅延評価を実行</td></tr>
+<tr><td><code>.plot()</code></td><td>簡易的な可視化（matplotlibベース）</td></tr>
+</tbody>
+</table>
+
+</body>
+</html>

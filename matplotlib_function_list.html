@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Matplotlib 関数・メソッド一覧</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 40px; }
+        th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+        th { background-color: #f0f0f0; }
+        h2 { border-left: 4px solid #007acc; padding-left: 8px; }
+    </style>
+</head>
+<body>
+<h1>Matplotlib 関数・メソッド一覧</h1>
+<h2>基本描画</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>plot()</code></td><td>折れ線グラフ</td></tr>
+<tr><td><code>scatter()</code></td><td>散布図</td></tr>
+<tr><td><code>bar(), barh()</code></td><td>棒グラフ（縦・横）</td></tr>
+<tr><td><code>hist()</code></td><td>ヒストグラム</td></tr>
+<tr><td><code>pie()</code></td><td>円グラフ</td></tr>
+</tbody>
+</table>
+<h2>地図・画像・等高線</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>contour() / contourf()</code></td><td>等高線／塗りつぶし等高線</td></tr>
+<tr><td><code>imshow()</code></td><td>画像表示（2D配列）</td></tr>
+<tr><td><code>pcolormesh()</code></td><td>疎な格子に対応したカラーマップ表示</td></tr>
+<tr><td><code>colorbar()</code></td><td>カラーバーの追加</td></tr>
+</tbody>
+</table>
+<h2>グラフの設定</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>xlabel(), ylabel(), title()</code></td><td>軸ラベル・タイトルの設定</td></tr>
+<tr><td><code>legend()</code></td><td>凡例の追加</td></tr>
+<tr><td><code>xlim(), ylim()</code></td><td>軸範囲の設定</td></tr>
+<tr><td><code>xticks(), yticks()</code></td><td>軸目盛の指定</td></tr>
+<tr><td><code>grid()</code></td><td>グリッドの表示</td></tr>
+</tbody>
+</table>
+<h2>複数図の管理</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>subplots()</code></td><td>複数グラフの作成</td></tr>
+<tr><td><code>subplot()</code></td><td>個別の位置指定で図を配置</td></tr>
+<tr><td><code>tight_layout()</code></td><td>図の自動レイアウト調整</td></tr>
+<tr><td><code>figure()</code></td><td>新しい図オブジェクトの作成</td></tr>
+</tbody>
+</table>
+<h2>保存・表示</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>savefig()</code></td><td>図を画像として保存</td></tr>
+<tr><td><code>show()</code></td><td>図を表示</td></tr>
+<tr><td><code>close()</code></td><td>図を閉じる（メモリ解放）</td></tr>
+</tbody>
+</table>
+<h2>スタイル・カスタマイズ</h2>
+<table>
+<thead><tr><th>名前</th><th>概要</th></tr></thead>
+<tbody>
+<tr><td><code>rcParams</code></td><td>フォントや色などの全体設定</td></tr>
+<tr><td><code>set_facecolor(), set_alpha()</code></td><td>背景色・透明度の設定</td></tr>
+<tr><td><code>annotate()</code></td><td>矢印付きの注釈を追加</td></tr>
+<tr><td><code>text()</code></td><td>任意の位置に文字を表示</td></tr>
+</tbody>
+</table>
+
+</body>
+</html>
